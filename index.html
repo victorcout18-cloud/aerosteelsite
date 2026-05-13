@@ -1,0 +1,2061 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Aerosteel — Mangueiras e conexões hidráulicas para sistemas industriais, navais e domiciliares. Performance, confiabilidade e excelência em cada projeto." />
+<meta name="keywords" content="mangueiras hidráulicas, conexões hidráulicas, sistemas hidráulicos, hidráulica naval, hidráulica industrial, Niterói, Aerosteel" />
+<title>Aerosteel — Mangueiras e Conexões</title>
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --orange:#F58220;
+  --orange-soft:#ff9533;
+  --orange-deep:#d96d10;
+  --black:#05080c;
+  --bg:#0a0e14;
+  --bg-2:#0d1219;
+  --petrol:#0e1822;
+  --graphite:#1a2230;
+  --line:rgba(255,255,255,.08);
+  --line-strong:rgba(255,255,255,.14);
+  --text:#e8ecf2;
+  --muted:#9aa3b2;
+  --white:#ffffff;
+  --shadow-orange: 0 14px 40px -10px rgba(245,130,32,.45);
+  --display: 'Barlow Condensed', sans-serif;
+  --body: 'Inter', sans-serif;
+}
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+
+.container{max-width:1320px;margin:0 auto;padding:0 28px}
+
+/* ================== HEADER ================== */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  padding:14px 0;
+  transition:all .35s ease;
+  background:linear-gradient(to bottom, rgba(5,8,12,.55), rgba(5,8,12,0));
+}
+.header.scrolled{
+  background:rgba(8,11,16,.92);
+  backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+  padding:10px 0;
+}
+.nav{
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.logo{
+  display:flex;align-items:center;gap:14px;flex-shrink:0;
+}
+.logo-mark{
+  width:96px;height:96px;
+  display:grid;place-items:center;
+  position:relative;
+  flex-shrink:0;
+}
+.logo-mark svg{width:100%;height:100%}
+.logo-mark img{width:100%;height:100%;object-fit:contain;display:block}
+.logo-text{
+  display:flex;flex-direction:column;line-height:1;justify-content:center;
+}
+.logo-text .brand{
+  font-family:var(--display);
+  font-weight:800;
+  font-size:42px;
+  letter-spacing:2px;
+  color:#fff;
+  line-height:.9;
+}
+.logo-text .brand span{color:var(--orange)}
+.logo-text .tag{
+  font-size:12px;
+  font-weight:600;
+  letter-spacing:3px;
+  color:#bfbfbf;
+  margin-top:10px;
+  text-transform:uppercase;
+}
+
+.menu{
+  display:flex;align-items:center;gap:42px;
+  list-style:none;
+}
+.menu a{
+  font-size:13px;
+  font-weight:600;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+  color:rgba(255,255,255,.78);
+  position:relative;
+  padding:8px 0;
+  transition:color .25s ease;
+}
+.menu a::after{
+  content:"";
+  position:absolute;
+  left:50%;bottom:0;
+  width:0;height:2px;
+  background:var(--orange);
+  transition:all .3s ease;
+  transform:translateX(-50%);
+}
+.menu a:hover, .menu a.active{color:#fff}
+.menu a:hover::after, .menu a.active::after{width:24px}
+.menu a.active{color:var(--orange)}
+.menu a.active::after{width:24px}
+
+.cta-btn{
+  background:var(--orange);
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+  padding:14px 22px;
+  border-radius:6px;
+  display:inline-flex;align-items:center;gap:10px;
+  box-shadow:0 8px 24px -8px rgba(245,130,32,.55);
+  transition:all .3s ease;
+  white-space:nowrap;
+}
+.cta-btn:hover{
+  background:var(--orange-soft);
+  transform:translateY(-2px);
+  box-shadow:0 14px 32px -10px rgba(245,130,32,.7);
+}
+
+.menu-toggle{
+  display:none;
+  width:42px;height:42px;
+  border-radius:6px;
+  background:rgba(255,255,255,.06);
+  border:1px solid var(--line);
+  align-items:center;justify-content:center;
+}
+.menu-toggle svg{width:22px;height:22px;stroke:#fff}
+
+/* ================== HERO ================== */
+.hero{
+  position:relative;
+  min-height:100vh;
+  overflow:hidden;
+  display:flex;
+  flex-direction:column;
+  padding-top:124px;
+}
+.hero-slider{
+  position:absolute;inset:0;
+  z-index:1;
+}
+.slide{
+  position:absolute;inset:0;
+  opacity:0;
+  transform:scale(1.04);
+  transition:opacity 1.4s cubic-bezier(.4,0,.2,1), transform 7s cubic-bezier(.2,.6,.3,1);
+  pointer-events:none;
+}
+.slide.active{
+  opacity:1;
+  transform:scale(1);
+  pointer-events:auto;
+}
+.slide-bg{
+  position:absolute;inset:0;
+  background-size:cover;
+  background-position:center;
+  will-change:transform;
+  filter:brightness(1.12) saturate(1.08) contrast(1.04);
+}
+.slide.active .slide-bg{
+  animation:slowPan 16s ease-in-out forwards;
+}
+@keyframes slowPan{
+  from{transform:scale(1)}
+  to{transform:scale(1.04)}
+}
+
+/* Hero overlays */
+.hero::before{
+  content:"";
+  position:absolute;inset:0;
+  z-index:2;
+  background:
+    linear-gradient(90deg, rgba(5,8,12,.92) 0%, rgba(5,8,12,.72) 28%, rgba(5,8,12,.32) 55%, rgba(5,8,12,.05) 100%);
+  pointer-events:none;
+}
+
+/* SOFT GRADIENT - blends hero into next section */
+.hero-fade{
+  position:absolute;
+  bottom:0;left:0;right:0;
+  height:280px;
+  z-index:3;
+  pointer-events:none;
+  background:linear-gradient(180deg,
+    rgba(10,14,20,0) 0%,
+    rgba(10,14,20,.25) 30%,
+    rgba(10,14,20,.6) 55%,
+    rgba(10,14,20,.88) 80%,
+    rgba(10,14,20,1) 100%);
+}
+
+.hero::after{
+  content:"";
+  position:absolute;inset:0;
+  z-index:2;
+  background-image:
+    radial-gradient(rgba(255,255,255,.025) 1px, transparent 1px);
+  background-size:3px 3px;
+  pointer-events:none;
+  mix-blend-mode:overlay;
+}
+
+.hero-content{
+  position:relative;z-index:5;
+  flex:1;
+  display:flex;
+  align-items:center;
+  padding:60px 0 30px;
+}
+.hero-inner{width:100%}
+.hero-badge{
+  display:inline-flex;align-items:center;gap:10px;
+  padding:8px 16px;
+  border:1px solid rgba(245,130,32,.4);
+  background:rgba(245,130,32,.08);
+  border-radius:50px;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:2.5px;
+  text-transform:uppercase;
+  color:var(--orange);
+  margin-bottom:28px;
+  backdrop-filter:blur(8px);
+  animation:fadeUp .9s ease both;
+}
+.hero-badge .dot{
+  width:6px;height:6px;border-radius:50%;
+  background:var(--orange);
+  box-shadow:0 0 12px var(--orange);
+  animation:pulse 2s ease-in-out infinite;
+}
+@keyframes pulse{
+  0%,100%{opacity:1;transform:scale(1)}
+  50%{opacity:.5;transform:scale(1.5)}
+}
+
+.hero h1{
+  font-family:var(--display);
+  font-size:clamp(42px, 6vw, 88px);
+  font-weight:800;
+  line-height:.96;
+  letter-spacing:-.5px;
+  text-transform:uppercase;
+  margin-bottom:28px;
+  color:#fff;
+  max-width:880px;
+  animation:fadeUp 1s .15s ease both;
+}
+.hero h1 .accent{
+  display:block;
+  color:var(--orange);
+  text-shadow:0 0 60px rgba(245,130,32,.4);
+}
+.hero p.sub{
+  max-width:520px;
+  font-size:17px;
+  line-height:1.65;
+  color:#c8d0db;
+  margin-bottom:40px;
+  font-weight:400;
+  animation:fadeUp 1s .3s ease both;
+}
+.hero-actions{
+  display:flex;gap:14px;flex-wrap:wrap;
+  animation:fadeUp 1s .45s ease both;
+}
+.btn{
+  display:inline-flex;align-items:center;gap:12px;
+  padding:18px 30px;
+  border-radius:6px;
+  font-size:13px;
+  font-weight:700;
+  letter-spacing:1.8px;
+  text-transform:uppercase;
+  transition:all .3s ease;
+  cursor:pointer;
+}
+.btn-primary{
+  background:var(--orange);
+  color:#fff;
+  box-shadow:var(--shadow-orange);
+}
+.btn-primary:hover{
+  background:var(--orange-soft);
+  transform:translateY(-3px);
+  box-shadow:0 18px 40px -10px rgba(245,130,32,.65);
+}
+.btn-outline{
+  background:rgba(8,11,16,.55);
+  color:#fff;
+  border:1.5px solid rgba(255,255,255,.22);
+  backdrop-filter:blur(10px);
+}
+.btn-outline:hover{
+  border-color:var(--orange);
+  background:rgba(245,130,32,.08);
+  transform:translateY(-3px);
+}
+.btn svg{width:16px;height:16px}
+
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(28px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* Slider arrows */
+.slider-arrow{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width:48px;height:48px;
+  border-radius:50%;
+  background:rgba(8,11,16,.55);
+  border:1px solid rgba(255,255,255,.15);
+  display:grid;place-items:center;
+  z-index:8;
+  transition:all .3s ease;
+  backdrop-filter:blur(8px);
+}
+.slider-arrow:hover{
+  background:var(--orange);
+  border-color:var(--orange);
+  transform:translateY(-50%) scale(1.08);
+}
+.slider-arrow svg{width:18px;height:18px;stroke:#fff}
+.slider-arrow.prev{left:24px}
+.slider-arrow.next{right:24px}
+
+.slider-dots{
+  position:absolute;
+  bottom:230px;right:80px;
+  display:flex;gap:8px;
+  z-index:8;
+}
+.dot-indicator{
+  width:24px;height:4px;
+  background:rgba(255,255,255,.3);
+  border-radius:2px;
+  cursor:pointer;
+  transition:all .3s ease;
+}
+.dot-indicator.active{
+  background:var(--orange);
+  width:32px;
+}
+
+/* Hero pillars */
+.hero-pillars{
+  position:relative;z-index:5;
+  border-top:1px solid var(--line);
+  background:linear-gradient(180deg, rgba(8,11,16,.7) 0%, rgba(10,14,20,.95) 100%);
+  backdrop-filter:blur(8px);
+  padding:32px 0;
+}
+.pillars-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:0;
+}
+.pillar{
+  display:flex;align-items:center;gap:20px;
+  padding:14px 32px;
+  position:relative;
+}
+.pillar:not(:last-child)::after{
+  content:"";
+  position:absolute;
+  right:0;top:18%;height:64%;
+  width:1px;
+  background:linear-gradient(to bottom, transparent, var(--line-strong), transparent);
+}
+.pillar-icon{
+  width:56px;height:56px;
+  display:grid;place-items:center;
+  border:1.5px solid rgba(245,130,32,.3);
+  border-radius:10px;
+  background:rgba(245,130,32,.06);
+  flex-shrink:0;
+  transition:all .3s ease;
+}
+.pillar-icon svg{width:26px;height:26px;stroke:var(--orange)}
+.pillar:hover .pillar-icon{
+  background:rgba(245,130,32,.15);
+  border-color:var(--orange);
+  transform:rotate(-4deg);
+}
+.pillar-text h4{
+  font-family:var(--display);
+  font-size:18px;
+  font-weight:700;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:#fff;
+  line-height:1.1;
+  margin-bottom:6px;
+}
+.pillar-text p{
+  font-size:12.5px;
+  color:var(--muted);
+  letter-spacing:.4px;
+}
+
+/* ================== SECTION COMMON ================== */
+section{position:relative}
+.section-padding{padding:120px 0}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:12px;
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:3px;
+  text-transform:uppercase;
+  color:var(--orange);
+  margin-bottom:18px;
+}
+.eyebrow::before{
+  content:"";width:36px;height:2px;background:var(--orange);
+}
+.section-title{
+  font-family:var(--display);
+  font-size:clamp(34px, 4.4vw, 58px);
+  font-weight:800;
+  line-height:1.04;
+  letter-spacing:-.3px;
+  color:#fff;
+  margin-bottom:24px;
+}
+.section-title .accent{color:var(--orange)}
+
+/* ================== ABOUT ================== */
+.about{
+  background:linear-gradient(180deg, var(--bg) 0%, var(--bg-2) 100%);
+  position:relative;
+  overflow:hidden;
+}
+.about::before{
+  content:"";
+  position:absolute;
+  top:-150px;left:-200px;
+  width:500px;height:500px;
+  background:radial-gradient(circle, rgba(245,130,32,.08) 0%, transparent 65%);
+  pointer-events:none;
+}
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1.05fr;
+  gap:80px;
+  align-items:center;
+}
+.about-text p{
+  color:#b8c0cc;
+  font-size:16px;
+  line-height:1.8;
+  margin-bottom:18px;
+}
+.stats{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:24px;
+  margin-top:42px;
+  padding-top:36px;
+  border-top:1px solid var(--line);
+}
+.stat-num{
+  font-family:var(--display);
+  font-size:48px;
+  font-weight:800;
+  color:var(--orange);
+  line-height:1;
+  margin-bottom:6px;
+  letter-spacing:-1px;
+}
+.stat-label{
+  font-size:11.5px;
+  color:var(--muted);
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  font-weight:600;
+}
+.about-images{
+  position:relative;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  grid-template-rows:auto auto;
+  gap:18px;
+}
+.about-img{
+  position:relative;
+  border-radius:14px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  transition:transform .5s ease;
+}
+.about-img:hover{transform:translateY(-6px)}
+.about-img.tall{
+  grid-row:span 2;
+  aspect-ratio:3/5;
+}
+.about-img.short{
+  aspect-ratio:5/4;
+}
+.about-img img{
+  width:100%;height:100%;object-fit:cover;
+  transition:transform .8s ease;
+}
+.about-img:hover img{transform:scale(1.06)}
+.about-img::after{
+  content:"";
+  position:absolute;inset:0;
+  background:linear-gradient(180deg, transparent 50%, rgba(5,8,12,.55) 100%);
+  pointer-events:none;
+}
+
+.badge-card{
+  position:absolute;
+  bottom:-20px;left:-20px;
+  background:var(--orange);
+  color:#fff;
+  padding:18px 24px;
+  border-radius:12px;
+  box-shadow:var(--shadow-orange);
+  z-index:5;
+}
+.badge-card .num{
+  font-family:var(--display);
+  font-size:32px;
+  font-weight:800;
+  line-height:1;
+}
+.badge-card .lbl{
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  margin-top:4px;
+}
+
+/* ================== PRODUCTS ================== */
+.products{
+  background:var(--bg-2);
+  position:relative;
+}
+.products::before{
+  content:"";
+  position:absolute;
+  top:0;left:0;right:0;height:1px;
+  background:linear-gradient(90deg, transparent, var(--line-strong), transparent);
+}
+.products-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  gap:40px;
+  margin-bottom:60px;
+  flex-wrap:wrap;
+}
+.products-header .left{max-width:640px}
+.products-header p{
+  color:var(--muted);
+  font-size:16px;
+  line-height:1.7;
+}
+
+.products-grid{
+  display:grid;
+  grid-template-columns:repeat(4, 1fr);
+  gap:18px;
+}
+
+/* MODERN PRODUCT CARDS WITH ADVANCED HOVER */
+.product-card{
+  position:relative;
+  aspect-ratio:1/1.2;
+  border-radius:14px;
+  overflow:hidden;
+  cursor:pointer;
+  border:1px solid var(--line);
+  background:linear-gradient(180deg, #1a2230 0%, #0d1219 100%);
+  transition:transform .55s cubic-bezier(.2,.7,.2,1),
+             border-color .4s ease,
+             box-shadow .55s ease;
+}
+.product-card::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:radial-gradient(600px circle at var(--mx,50%) var(--my,50%),
+    rgba(245,130,32,.18) 0%, transparent 45%);
+  opacity:0;
+  transition:opacity .5s ease;
+  z-index:3;
+  pointer-events:none;
+}
+.product-card:hover{
+  transform:translateY(-10px);
+  border-color:rgba(245,130,32,.55);
+  box-shadow:
+    0 30px 60px -20px rgba(0,0,0,.6),
+    0 0 0 1px rgba(245,130,32,.2),
+    0 0 50px -10px rgba(245,130,32,.25);
+}
+.product-card:hover::before{opacity:1}
+
+.pc-img-wrap{
+  position:absolute;
+  inset:0;
+  overflow:hidden;
+  z-index:1;
+}
+.pc-img-wrap::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,
+    rgba(13,18,25,.15) 0%,
+    rgba(13,18,25,.45) 50%,
+    rgba(13,18,25,.96) 100%);
+  z-index:2;
+  transition:background .5s ease;
+}
+.product-card:hover .pc-img-wrap::after{
+  background:linear-gradient(180deg,
+    rgba(13,18,25,.05) 0%,
+    rgba(13,18,25,.35) 50%,
+    rgba(13,18,25,.92) 100%);
+}
+.pc-img{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  transition:transform .9s cubic-bezier(.2,.7,.2,1), filter .5s ease;
+  filter:brightness(.85) saturate(.9);
+}
+.product-card:hover .pc-img{
+  transform:scale(1.12);
+  filter:brightness(1.02) saturate(1.1);
+}
+
+/* ===== CARDS COM FOTO: BRANCO UNIFICADO (PURO) ===== */
+/* Estratégia: card 100% branco sólido + foto com mix-blend-mode multiply.
+   Multiply faz qualquer pixel BRANCO da foto se fundir matematicamente com
+   o branco do card → fronteira invisível, mesmo se a foto tem branco off-white,
+   sombras suaves ou JPEG noise. Pixels coloridos/escuros do produto
+   permanecem intactos. */
+.product-card.card-light{
+  background:#ffffff;
+  border-color:rgba(0,0,0,.08);
+}
+.card-light .pc-img-wrap.has-photo{
+  background:#ffffff;
+}
+/* Anula o gradiente escuro inferior — não há mais "linha" entre foto e título */
+.card-light .pc-img-wrap.has-photo::after{
+  background:transparent;
+}
+.card-light .pc-img.product-photo{
+  background-size:contain;
+  background-repeat:no-repeat;
+  background-position:center 38%;
+  background-color:transparent;
+  inset:5% 5% 28% 5%;
+  /* Suaviza ligeiramente off-whites para colar com o branco puro do card */
+  filter:brightness(1.04) contrast(1.05);
+  /* CHAVE: multiply elimina diferenças tonais entre foto e card */
+  mix-blend-mode:multiply;
+  transition:transform .9s cubic-bezier(.2,.7,.2,1), filter .5s ease;
+}
+.card-light:hover .pc-img.product-photo{
+  filter:brightness(1.06) contrast(1.07);
+  transform:scale(1.05);
+}
+/* Modificador para imagens verticais (ex: manômetro com rosca embaixo) —
+   inset inferior maior para o produto inteiro caber acima da faixa de conteúdo */
+.card-light .pc-img.product-photo.pc-img--tall{
+  background-position:center 50%;
+  inset:4% 10% 32% 10%;
+}
+
+/* Faixa de conteúdo (chip + título) também branca sólida */
+.card-light .pc-content{
+  background:#ffffff;
+  padding-top:24px;
+}
+/* Linha laranja sutil divisória entre a foto e o título */
+.card-light .pc-content::before{
+  content:"";
+  position:absolute;
+  top:0;
+  left:22px;
+  right:22px;
+  height:1px;
+  background:linear-gradient(90deg,
+    rgba(245,130,32,0) 0%,
+    rgba(245,130,32,.55) 18%,
+    rgba(245,130,32,.55) 82%,
+    rgba(245,130,32,0) 100%);
+  pointer-events:none;
+  transition:background .35s ease;
+}
+.card-light:hover .pc-content::before{
+  background:linear-gradient(90deg,
+    rgba(245,130,32,0) 0%,
+    rgba(245,130,32,.95) 18%,
+    rgba(245,130,32,.95) 82%,
+    rgba(245,130,32,0) 100%);
+}
+
+/* Hover: borda laranja + sombra externa (sem glow forte porque card é claro) */
+.card-light:hover{
+  border-color:rgba(245,130,32,.5);
+  box-shadow:
+    0 24px 48px -16px rgba(0,0,0,.45),
+    0 0 0 1px rgba(245,130,32,.18);
+}
+
+/* Glow do cursor laranja sutil sobre o branco */
+.card-light::before{
+  background:radial-gradient(500px circle at var(--mx,50%) var(--my,50%),
+    rgba(245,130,32,.10) 0%, transparent 50%);
+}
+
+/* Texto/elementos do card branco em PRETO para alto contraste */
+.card-light .pc-num{
+  background:#0a0e14;
+  color:#ffffff;
+  box-shadow:0 3px 10px -3px rgba(0,0,0,.3);
+}
+.card-light .pc-num::before{background:var(--orange)}
+.card-light .pc-title{color:#0a0e14}
+.card-light .pc-arrow{color:#0a0e14;opacity:.65}
+.card-light:hover .pc-arrow{color:var(--orange);opacity:1}
+.card-light .pc-corner::before,
+.card-light .pc-corner::after{background:var(--orange)}
+.card-light .pc-shine{
+  background:linear-gradient(110deg,
+    transparent 30%,
+    rgba(0,0,0,.035) 50%,
+    transparent 70%);
+}
+
+/* Sweep light effect on hover */
+.pc-shine{
+  position:absolute;
+  top:0;left:-100%;
+  width:60%;height:100%;
+  background:linear-gradient(110deg,
+    transparent 30%,
+    rgba(255,255,255,.08) 50%,
+    transparent 70%);
+  z-index:4;
+  pointer-events:none;
+  transition:left .9s ease;
+}
+.product-card:hover .pc-shine{left:120%}
+
+/* Corner accent that grows on hover */
+.pc-corner{
+  position:absolute;
+  top:14px;right:14px;
+  width:30px;height:30px;
+  z-index:5;
+  pointer-events:none;
+  opacity:.4;
+  transition:all .5s ease;
+}
+.pc-corner::before, .pc-corner::after{
+  content:"";
+  position:absolute;
+  background:var(--orange);
+  transition:all .5s ease;
+}
+.pc-corner::before{
+  top:0;right:0;
+  width:14px;height:2px;
+}
+.pc-corner::after{
+  top:0;right:0;
+  width:2px;height:14px;
+}
+.product-card:hover .pc-corner{opacity:1}
+.product-card:hover .pc-corner::before{width:24px}
+.product-card:hover .pc-corner::after{height:24px}
+
+.pc-content{
+  position:absolute;
+  bottom:0;left:0;right:0;
+  padding:22px;
+  z-index:5;
+  transform:translateY(0);
+  transition:transform .5s cubic-bezier(.2,.7,.2,1);
+}
+.product-card:hover .pc-content{
+  transform:translateY(-4px);
+}
+.pc-num{
+  font-family:var(--display);
+  font-size:12px;
+  font-weight:700;
+  color:#0a0a0a;
+  letter-spacing:1.8px;
+  margin-bottom:10px;
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:#ffffff;
+  padding:6px 12px 5px;
+  border-radius:4px;
+  box-shadow:0 4px 14px -4px rgba(0,0,0,.4);
+  text-transform:uppercase;
+  align-self:flex-start;
+  width:fit-content;
+}
+.pc-num::before{
+  content:"";
+  width:8px;height:8px;
+  background:var(--orange);
+  border-radius:1px;
+  transition:transform .5s ease;
+  flex-shrink:0;
+}
+.product-card:hover .pc-num::before{transform:rotate(45deg)}
+
+.pc-title{
+  font-family:var(--display);
+  font-size:20px;
+  font-weight:700;
+  line-height:1.1;
+  text-transform:uppercase;
+  letter-spacing:.5px;
+  color:#fff;
+  margin-bottom:12px;
+}
+.pc-arrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:#fff;
+  opacity:.6;
+  transition:all .4s ease;
+}
+.product-card:hover .pc-arrow{
+  opacity:1;
+  color:var(--orange);
+  gap:14px;
+}
+.pc-arrow svg{width:14px;height:14px;transition:transform .4s ease}
+.product-card:hover .pc-arrow svg{transform:translateX(2px)}
+
+/* product placeholder visuals (CSS-painted illustrations) */
+.pc-illust{
+  position:absolute;inset:0;
+  display:grid;place-items:center;
+  background:radial-gradient(circle at 50% 40%, #1f2a3a 0%, #0b0f15 80%);
+  z-index:1;
+  transition:background .5s ease;
+}
+.product-card:hover .pc-illust{
+  background:radial-gradient(circle at 50% 40%, #283448 0%, #0e1320 80%);
+}
+.pc-illust svg{
+  width:62%;height:62%;opacity:.92;
+  transition:transform .7s cubic-bezier(.2,.7,.2,1);
+}
+.product-card:hover .pc-illust svg{
+  transform:scale(1.08) rotate(-2deg);
+}
+/* gradient overlay over the illustration cards */
+.pc-illust::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:linear-gradient(180deg,
+    transparent 0%,
+    rgba(13,18,25,.2) 55%,
+    rgba(13,18,25,.92) 100%);
+  pointer-events:none;
+}
+
+/* ================== SUPPLIERS — sistema "logo plate" premium ================== */
+.suppliers{
+  background:#0b1016;
+  position:relative;
+  overflow:hidden;
+  padding:110px 0;
+}
+/* Halo laranja sutil no canto */
+.suppliers::before{
+  content:"";
+  position:absolute;
+  top:-180px;right:-180px;
+  width:520px;height:520px;
+  background:radial-gradient(circle, rgba(245,130,32,.06) 0%, transparent 65%);
+  pointer-events:none;
+}
+.suppliers::after{
+  content:"";
+  position:absolute;
+  bottom:-200px;left:-200px;
+  width:540px;height:540px;
+  background:radial-gradient(circle, rgba(80,140,200,.04) 0%, transparent 65%);
+  pointer-events:none;
+}
+.suppliers-header{
+  text-align:center;
+  margin-bottom:60px;
+  max-width:720px;
+  margin-left:auto;
+  margin-right:auto;
+  position:relative;z-index:2;
+}
+.suppliers-header .eyebrow{justify-content:center}
+.suppliers-header p{
+  color:var(--muted);
+  font-size:15.5px;
+  line-height:1.7;
+  margin-top:18px;
+}
+
+.suppliers-grid{
+  display:grid;
+  grid-template-columns:repeat(7, 1fr);
+  gap:18px;
+  max-width:1280px;
+  margin:0 auto;
+  position:relative;z-index:2;
+}
+
+/* CARD externo (transparente, recebe o halo glow) */
+.supplier-card{
+  position:relative;
+  aspect-ratio:1.55/1;
+  background:transparent;
+  border:none;
+  border-radius:14px;
+  padding:0;
+  cursor:pointer;
+  transition:transform .55s cubic-bezier(.2,.7,.2,1);
+  isolation:isolate;
+}
+
+/* HALO GLOW difuso atrás do card no hover */
+.supplier-card::before{
+  content:"";
+  position:absolute;
+  inset:-12px;
+  background:radial-gradient(ellipse at center,
+    rgba(245,130,32,0) 0%,
+    rgba(245,130,32,0) 50%,
+    rgba(245,130,32,0) 100%);
+  border-radius:24px;
+  z-index:-1;
+  opacity:0;
+  transition:opacity .5s ease, background .5s ease;
+  pointer-events:none;
+  filter:blur(18px);
+}
+
+/* LOGO PLATE — base clara translúcida com glassmorphism — UNIFICADA */
+.logo-plate{
+  position:relative;
+  width:100%;
+  height:100%;
+  border-radius:14px;
+  display:grid;
+  place-items:center;
+  padding:3% 4%;
+  overflow:hidden;
+  background:linear-gradient(145deg,
+    rgba(255,255,255,.94) 0%,
+    rgba(245,247,250,.82) 100%);
+  border:1px solid rgba(255,255,255,.5);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,.95),
+    inset 0 -1px 0 rgba(0,0,0,.05),
+    0 6px 20px -6px rgba(0,0,0,.45);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+  transition:
+    background .45s ease,
+    border-color .45s ease,
+    box-shadow .55s cubic-bezier(.2,.7,.2,1);
+}
+
+/* Highlight superior — reflexo de luz sutil */
+.logo-plate::before{
+  content:"";
+  position:absolute;
+  top:0;left:14%;right:14%;
+  height:1px;
+  background:linear-gradient(90deg,
+    rgba(255,255,255,0) 0%,
+    rgba(255,255,255,.85) 50%,
+    rgba(255,255,255,0) 100%);
+  opacity:.7;
+  transition:opacity .4s ease;
+  z-index:2;
+}
+/* Highlight inferior em laranja — visível no hover */
+.logo-plate::after{
+  content:"";
+  position:absolute;
+  bottom:0;left:18%;right:18%;
+  height:1px;
+  background:linear-gradient(90deg,
+    rgba(245,130,32,0) 0%,
+    rgba(245,130,32,.5) 50%,
+    rgba(245,130,32,0) 100%);
+  opacity:0;
+  transition:opacity .4s ease;
+  z-index:2;
+}
+
+/* IMG — TAMANHO UNIFICADO: todas as logos respeitam a mesma altura ótica.
+   Independentemente do aspect ratio do PNG original, a altura é fixa em
+   ~58% da altura do card. Isso garante harmonia visual entre logos
+   quadradas (ibira) e logos muito largas (genebre, alfagomma).
+   A largura se ajusta proporcionalmente, com max-width de segurança
+   para não estourar nas mais largas. */
+.logo-plate img{
+  height:90%;
+  width:auto;
+  max-width:100%;
+  max-height:90%;
+  object-fit:contain;
+  position:relative;z-index:1;
+  display:block;
+  margin:0 auto;
+  transition:transform .55s cubic-bezier(.2,.7,.2,1), filter .4s ease;
+}
+
+/* Logos com proporção próxima do quadrado (ex: ibira — 806×850 com índio
+   acima e texto IBIRÁ abaixo) precisam de tratamento próprio para que
+   ambos os elementos (rosto + texto) fiquem visíveis e legíveis no
+   mesmo tamanho ótico das outras logos horizontais. */
+.logo-plate img[src*="ibira"]{
+  height:96%;
+  max-height:96%;
+  max-width:66%;
+}
+
+/* ====================== HOVER PREMIUM ====================== */
+.supplier-card:hover{
+  transform:translateY(-8px) scale(1.02);
+}
+.supplier-card:hover::before{
+  opacity:1;
+  background:radial-gradient(ellipse at center,
+    rgba(245,130,32,.4) 0%,
+    rgba(245,130,32,.18) 35%,
+    rgba(245,130,32,0) 70%);
+}
+.supplier-card:hover .logo-plate{
+  background:linear-gradient(145deg,
+    rgba(255,255,255,1) 0%,
+    rgba(252,254,255,.95) 100%);
+  border-color:rgba(245,130,32,.45);
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,1),
+    inset 0 -1px 0 rgba(0,0,0,.07),
+    0 22px 44px -10px rgba(0,0,0,.55),
+    0 0 0 1px rgba(245,130,32,.22);
+}
+.supplier-card:hover .logo-plate img{
+  transform:scale(1.06);
+}
+.supplier-card:hover .logo-plate::after{opacity:1}
+
+/* ================== CONTACT ================== */
+.contact{
+  background:linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%);
+  position:relative;
+  overflow:hidden;
+}
+.contact::before{
+  content:"";
+  position:absolute;
+  bottom:-200px;right:-200px;
+  width:600px;height:600px;
+  background:radial-gradient(circle, rgba(245,130,32,.08) 0%, transparent 65%);
+  pointer-events:none;
+}
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1.1fr;
+  gap:60px;
+  align-items:start;
+}
+.contact-info{
+  position:sticky;top:100px;
+}
+.contact-cards{
+  display:grid;
+  gap:14px;
+  margin-bottom:32px;
+}
+.contact-card{
+  display:flex;align-items:flex-start;gap:18px;
+  padding:22px 24px;
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--line);
+  border-radius:12px;
+  transition:all .3s ease;
+}
+.contact-card:hover{
+  border-color:rgba(245,130,32,.4);
+  background:rgba(245,130,32,.04);
+  transform:translateX(4px);
+}
+.contact-card .ico{
+  width:46px;height:46px;
+  display:grid;place-items:center;
+  border-radius:10px;
+  background:rgba(245,130,32,.1);
+  border:1px solid rgba(245,130,32,.25);
+  flex-shrink:0;
+}
+.contact-card .ico svg{width:20px;height:20px;stroke:var(--orange)}
+.contact-card .lbl{
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--muted);
+  font-weight:600;
+  margin-bottom:4px;
+}
+.contact-card .val{
+  font-size:15px;
+  color:#fff;
+  font-weight:500;
+  line-height:1.4;
+  word-break:break-word;
+}
+
+.map-wrap{
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid var(--line);
+  height:240px;
+}
+.map-wrap iframe{width:100%;height:100%;border:0;filter:grayscale(.3) invert(.92) hue-rotate(180deg)}
+
+.contact-form{
+  background:rgba(255,255,255,.03);
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:42px;
+}
+.form-row{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:16px;
+  margin-bottom:16px;
+}
+.field label{
+  display:block;
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:1.8px;
+  text-transform:uppercase;
+  color:var(--muted);
+  margin-bottom:8px;
+}
+.field input, .field textarea, .field select{
+  width:100%;
+  padding:14px 16px;
+  background:rgba(0,0,0,.35);
+  border:1px solid var(--line-strong);
+  border-radius:8px;
+  color:#fff;
+  font-family:inherit;
+  font-size:14px;
+  transition:all .25s ease;
+}
+.field input:focus, .field textarea:focus, .field select:focus{
+  outline:none;
+  border-color:var(--orange);
+  background:rgba(0,0,0,.5);
+  box-shadow:0 0 0 4px rgba(245,130,32,.1);
+}
+.field textarea{min-height:140px;resize:vertical}
+.field{margin-bottom:16px}
+.contact-form .btn{width:100%;justify-content:center;margin-top:8px}
+
+/* ================== FOOTER ================== */
+.footer{
+  background:#04060a;
+  border-top:1px solid var(--line);
+  padding:80px 0 0;
+  position:relative;
+}
+.footer-grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr 1fr 1.2fr;
+  gap:60px;
+  margin-bottom:60px;
+}
+.footer h5{
+  font-family:var(--display);
+  font-size:14px;
+  font-weight:700;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:#fff;
+  margin-bottom:24px;
+  position:relative;
+  padding-bottom:14px;
+}
+.footer h5::after{
+  content:"";
+  position:absolute;
+  left:0;bottom:0;
+  width:30px;height:2px;
+  background:var(--orange);
+}
+.footer p, .footer a{
+  color:var(--muted);
+  font-size:14px;
+  line-height:1.8;
+  transition:color .25s ease;
+}
+.footer a:hover{color:var(--orange)}
+.footer ul{list-style:none}
+.footer ul li{margin-bottom:10px}
+.footer-brand p{margin-top:18px;max-width:320px}
+.footer-contact p{margin-bottom:8px;word-break:break-word}
+
+.socials{
+  display:flex;gap:10px;
+  margin-top:22px;
+}
+.social{
+  width:38px;height:38px;
+  display:grid;place-items:center;
+  background:rgba(255,255,255,.04);
+  border:1px solid var(--line);
+  border-radius:8px;
+  transition:all .3s ease;
+}
+.social svg{width:16px;height:16px;stroke:var(--muted);transition:stroke .25s ease}
+.social:hover{
+  background:var(--orange);
+  border-color:var(--orange);
+  transform:translateY(-3px);
+}
+.social:hover svg{stroke:#fff}
+
+.copyright{
+  border-top:1px solid var(--line);
+  padding:24px 0;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;gap:14px;
+}
+.copyright p{font-size:12.5px;color:var(--muted);letter-spacing:.4px}
+.copyright .cnpj{
+  font-size:12px;
+  color:var(--muted);
+  letter-spacing:1px;
+}
+
+/* WhatsApp floating */
+.whatsapp-float{
+  position:fixed;
+  right:24px;bottom:24px;
+  width:58px;height:58px;
+  background:#25D366;
+  border-radius:50%;
+  display:grid;place-items:center;
+  box-shadow:0 14px 36px -10px rgba(37,211,102,.55);
+  z-index:90;
+  transition:transform .3s ease;
+  animation:floatPulse 2.4s ease-in-out infinite;
+}
+.whatsapp-float:hover{transform:scale(1.1)}
+.whatsapp-float svg{width:30px;height:30px;fill:#fff}
+@keyframes floatPulse{
+  0%,100%{box-shadow:0 14px 36px -10px rgba(37,211,102,.55), 0 0 0 0 rgba(37,211,102,.5)}
+  50%{box-shadow:0 14px 36px -10px rgba(37,211,102,.55), 0 0 0 16px rgba(37,211,102,0)}
+}
+
+/* ================== REVEAL ANIMATIONS ================== */
+.reveal{opacity:0;transform:translateY(40px);transition:all .9s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ================== RESPONSIVE ================== */
+@media (max-width: 1100px){
+  .products-grid{grid-template-columns:repeat(3, 1fr)}
+  .suppliers-grid{grid-template-columns:repeat(5, 1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:40px}
+  .about-grid{grid-template-columns:1fr;gap:50px}
+  .contact-grid{grid-template-columns:1fr;gap:40px}
+  .contact-info{position:static}
+}
+@media (max-width: 880px){
+  .menu, .cta-btn{display:none}
+  .menu-toggle{display:flex}
+  .pillars-grid{grid-template-columns:1fr;gap:8px}
+  .pillar:not(:last-child)::after{display:none}
+  .pillar{border-bottom:1px solid var(--line);padding:14px 0}
+  .pillar:last-child{border-bottom:none}
+  .products-grid{grid-template-columns:repeat(2, 1fr)}
+  .suppliers-grid{grid-template-columns:repeat(3, 1fr)}
+  .suppliers{padding:80px 0}
+  .form-row{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr 1fr}
+  .slider-arrow{display:none}
+  .slider-dots{right:50%;transform:translateX(50%);bottom:30px}
+  .section-padding{padding:80px 0}
+  .hero-content{padding:40px 0}
+  .contact-form{padding:28px}
+  .copyright{flex-direction:column;text-align:center}
+  .logo-text .brand{font-size:28px;letter-spacing:1.5px}
+  .logo-text .tag{font-size:10px;letter-spacing:2.2px;margin-top:6px}
+  .logo-mark{width:74px;height:74px;border-radius:10px}
+  .logo{gap:13px}
+}
+@media (max-width: 520px){
+  .container{padding:0 20px}
+  .products-grid{grid-template-columns:1fr}
+  .suppliers-grid{grid-template-columns:repeat(2, 1fr)}
+  .footer-grid{grid-template-columns:1fr}
+  .stats{grid-template-columns:1fr}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .btn{justify-content:center}
+  .badge-card{display:none}
+}
+
+/* Mobile menu */
+.mobile-menu{
+  display:none;
+  position:fixed;top:0;left:0;right:0;bottom:0;
+  background:rgba(5,8,12,.98);
+  backdrop-filter:blur(20px);
+  z-index:99;
+  padding:100px 30px 30px;
+  flex-direction:column;
+  gap:8px;
+}
+.mobile-menu.open{display:flex}
+.mobile-menu a{
+  font-family:var(--display);
+  font-size:24px;
+  font-weight:700;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  color:#fff;
+  padding:18px 0;
+  border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;
+}
+.mobile-menu a:hover{color:var(--orange)}
+.mobile-menu .cta-btn{display:inline-flex;margin-top:24px;justify-content:center}
+
+/* form notice */
+.form-notice{
+  margin-top:14px;
+  padding:14px 16px;
+  border-radius:8px;
+  font-size:13px;
+  display:none;
+  text-align:center;
+}
+.form-notice.success{
+  display:block;
+  background:rgba(37,211,102,.1);
+  border:1px solid rgba(37,211,102,.3);
+  color:#4ade80;
+}
+</style>
+</head>
+<body>
+
+<!-- =================== HEADER =================== -->
+<header class="header" id="header">
+  <div class="container nav">
+    <a href="#" class="logo" aria-label="Aerosteel">
+      <div class="logo-mark">
+        <img src="assets/logo_icon.png" alt="Aerosteel">
+      </div>
+      <div class="logo-text">
+        <div class="brand">AERO<span>STEEL</span></div>
+        <div class="tag">Mangueiras e Conexões</div>
+      </div>
+    </a>
+
+    <nav>
+      <ul class="menu">
+        <li><a href="#home" class="active">Início</a></li>
+        <li><a href="#about">Sobre</a></li>
+        <li><a href="produtos.html">Produtos</a></li>
+        <li><a href="#suppliers">Fornecedores</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+    </nav>
+
+    <a href="#contact" class="cta-btn">
+      Solicitar Orçamento
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Início <span style="color:var(--orange)">→</span></a>
+  <a href="#about">Sobre <span style="color:var(--orange)">→</span></a>
+  <a href="produtos.html">Produtos <span style="color:var(--orange)">→</span></a>
+  <a href="#suppliers">Fornecedores <span style="color:var(--orange)">→</span></a>
+  <a href="#contact">Contato <span style="color:var(--orange)">→</span></a>
+  <a href="#contact" class="cta-btn">Solicitar Orçamento</a>
+</div>
+
+<!-- =================== HERO =================== -->
+<section class="hero" id="home">
+  <div class="hero-slider" id="heroSlider">
+    <div class="slide active">
+      <div class="slide-bg" style="background-image:url('assets/barco.png')"></div>
+    </div>
+    <div class="slide">
+      <div class="slide-bg" style="background-image:url('assets/escavadeira.png')"></div>
+    </div>
+    <div class="slide">
+      <div class="slide-bg" style="background-image:url('assets/mangueira.png')"></div>
+    </div>
+  </div>
+
+  <button class="slider-arrow prev" id="prevSlide" aria-label="Anterior">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <button class="slider-arrow next" id="nextSlide" aria-label="Próximo">
+    <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+
+  <div class="slider-dots" id="sliderDots">
+    <div class="dot-indicator active" data-index="0"></div>
+    <div class="dot-indicator" data-index="1"></div>
+    <div class="dot-indicator" data-index="2"></div>
+  </div>
+
+  <div class="hero-content">
+    <div class="container hero-inner">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        <span>Excelência desde 2002</span>
+      </div>
+      <h1>
+        Precisão que move.
+        <span class="accent">Força que impulsiona.</span>
+      </h1>
+      <p class="sub">
+        Soluções hidráulicas robustas para ambientes extremos.
+        Performance, confiabilidade e excelência em cada projeto.
+      </p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
+          Nossos Produtos
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.37 1.9.72 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.35 1.85.59 2.81.72A2 2 0 0 1 22 16.92z"/></svg>
+          Fale Conosco
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Soft fade to next section (no visible line) -->
+  <div class="hero-fade"></div>
+
+  <div class="hero-pillars">
+    <div class="container">
+      <div class="pillars-grid">
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L3 7v6c0 5 3.5 9 9 11 5.5-2 9-6 9-11V7l-9-5z"/><path d="M9 12l2 2 4-4"/></svg>
+          </div>
+          <div class="pillar-text">
+            <h4>Alta Performance</h4>
+            <p>Componentes premium para máxima durabilidade</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+          </div>
+          <div class="pillar-text">
+            <h4>Engenharia Especializada</h4>
+            <p>Soluções dimensionadas para cada aplicação</p>
+          </div>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/><path d="M5 9h14"/></svg>
+          </div>
+          <div class="pillar-text">
+            <h4>Atendimento Técnico</h4>
+            <p>Suporte consultivo do projeto à entrega</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== ABOUT =================== -->
+<section class="about section-padding" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <div class="eyebrow">Sobre a empresa</div>
+        <h2 class="section-title">
+          Excelência em <br><span class="accent">Sistemas Hidráulicos</span>
+        </h2>
+        <p>
+          A Aerosteel foi fundada em 17/07/2002 e desde então vem se consolidando
+          como uma forte referência no ramo de mangueiras, conexões hidráulicas e
+          soluções industriais, navais e domiciliar.
+        </p>
+        <p>
+          Com compromisso, qualidade e excelência no atendimento, oferecemos
+          produtos de alta performance e confiabilidade para diversos segmentos —
+          do estaleiro ao jardim da sua casa.
+        </p>
+
+        <div class="stats">
+          <div>
+            <div class="stat-num">23+</div>
+            <div class="stat-label">Anos de mercado</div>
+          </div>
+          <div>
+            <div class="stat-num">+1.500</div>
+            <div class="stat-label">Projetos entregues</div>
+          </div>
+          <div>
+            <div class="stat-num">100%</div>
+            <div class="stat-label">Compromisso técnico</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-images reveal">
+        <div class="about-img tall">
+          <img src="assets/sobre1.jpg" alt="Sistema hidráulico industrial Aerosteel">
+        </div>
+        <div class="about-img short">
+          <img src="assets/sobre2.jpg" alt="Conexões e válvulas hidráulicas">
+        </div>
+        <div class="about-img short">
+          <img src="assets/sobre3.jpg" alt="Mangueiras industriais e sistema naval">
+        </div>
+        <div class="badge-card">
+          <div class="num">2002</div>
+          <div class="lbl">Fundada em</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== PRODUCTS =================== -->
+<section class="products section-padding" id="products">
+  <div class="container">
+    <div class="products-header reveal">
+      <div class="left">
+        <div class="eyebrow">Nossos produtos</div>
+        <h2 class="section-title">
+          Linha completa de <span class="accent">soluções hidráulicas</span>
+        </h2>
+        <p>
+          Mangueiras, conexões e componentes selecionados para resistir aos ambientes
+          mais exigentes — pressão, vibração, temperatura e exposição naval.
+        </p>
+      </div>
+      <a href="produtos.html" class="btn btn-outline">
+        Catálogo Completo
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+    </div>
+
+    <div class="products-grid" id="productsGrid">
+
+      <article class="product-card card-light reveal">
+        <div class="pc-img-wrap has-photo">
+          <div class="pc-img product-photo" style="background-image:url('assets/1_trama.png')"></div>
+        </div>
+        <div class="pc-corner"></div>
+        <div class="pc-shine"></div>
+        <div class="pc-content">
+          <h3 class="pc-title">1 Trançado de Aço</h3>
+          <span class="pc-arrow">Ver detalhes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </article>
+
+      <article class="product-card card-light reveal">
+        <div class="pc-img-wrap has-photo">
+          <div class="pc-img product-photo" style="background-image:url('assets/2_trama.png')"></div>
+        </div>
+        <div class="pc-corner"></div>
+        <div class="pc-shine"></div>
+        <div class="pc-content">
+          <h3 class="pc-title">2 Trançados de Aço</h3>
+          <span class="pc-arrow">Ver detalhes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </article>
+
+      <article class="product-card card-light reveal">
+        <div class="pc-img-wrap has-photo">
+          <div class="pc-img product-photo" style="background-image:url('assets/flanges.png')"></div>
+        </div>
+        <div class="pc-corner"></div>
+        <div class="pc-shine"></div>
+        <div class="pc-content">
+          <h3 class="pc-title">Flanges</h3>
+          <span class="pc-arrow">Ver detalhes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </article>
+
+      <article class="product-card card-light reveal">
+        <div class="pc-img-wrap has-photo">
+          <div class="pc-img product-photo" style="background-image:url('assets/conexoes.png')"></div>
+        </div>
+        <div class="pc-corner"></div>
+        <div class="pc-shine"></div>
+        <div class="pc-content">
+          <h3 class="pc-title">Conexões Hidráulicas</h3>
+          <span class="pc-arrow">Ver detalhes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </article>
+
+      <article class="product-card card-light reveal">
+        <div class="pc-img-wrap has-photo">
+          <div class="pc-img product-photo" style="background-image:url('assets/adaptadores.png')"></div>
+        </div>
+        <div class="pc-corner"></div>
+        <div class="pc-shine"></div>
+        <div class="pc-content">
+          <h3 class="pc-title">Adaptadores Hidráulicos</h3>
+          <span class="pc-arrow">Ver detalhes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </article>
+
+      <article class="product-card card-light reveal">
+        <div class="pc-img-wrap has-photo">
+          <div class="pc-img product-photo" style="background-image:url('assets/tuboshidra.png')"></div>
+        </div>
+        <div class="pc-corner"></div>
+        <div class="pc-shine"></div>
+        <div class="pc-content">
+          <h3 class="pc-title">Tubos Hidráulicos</h3>
+          <span class="pc-arrow">Ver detalhes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </article>
+
+      <article class="product-card card-light reveal">
+        <div class="pc-img-wrap has-photo">
+          <div class="pc-img product-photo" style="background-image:url('assets/abracadeira.png')"></div>
+        </div>
+        <div class="pc-corner"></div>
+        <div class="pc-shine"></div>
+        <div class="pc-content">
+          <h3 class="pc-title">Abraçadeiras</h3>
+          <span class="pc-arrow">Ver detalhes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </article>
+
+      <article class="product-card card-light reveal">
+        <div class="pc-img-wrap has-photo">
+          <div class="pc-img product-photo pc-img--tall" style="background-image:url('assets/manometro.png')"></div>
+        </div>
+        <div class="pc-corner"></div>
+        <div class="pc-shine"></div>
+        <div class="pc-content">
+          <h3 class="pc-title">Manômetros</h3>
+          <span class="pc-arrow">Ver detalhes <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg></span>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- =================== SUPPLIERS =================== -->
+<section class="suppliers" id="suppliers">
+  <div class="container">
+    <div class="suppliers-header reveal">
+      <div class="eyebrow">Nossos parceiros</div>
+      <h2 class="section-title">
+        Trabalhamos com as <span class="accent">melhores marcas</span>
+      </h2>
+      <p>
+        Soluções hidráulicas em parceria com as marcas mais reconhecidas do
+        mercado nacional e internacional.
+      </p>
+    </div>
+
+    <div class="suppliers-grid reveal">
+      <!-- 14 fornecedores. Plate claro unificado para todos os cards. Os PNGs de logos
+           originalmente desenhadas para fundo escuro foram processados para
+           ficarem legíveis sobre o plate claro, preservando as cores
+           identitárias de cada marca (sem filtros invert/grayscale). -->
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/alfagoma.png" alt="Alfagomma"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/arfoo.png" alt="Arfoo"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/Balflex.png" alt="Balflex"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/belenus.png" alt="Belenus"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/coutoflex.png" alt="C.M. Couto / Coutoflex"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/engatespcl.png" alt="PCL Engates Rápidos"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/funguap.png" alt="Funguap — Engates e Conexões"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/genebre.png" alt="Genebre"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/hennings.png" alt="Hennings — Mangueiras e Conexões"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/ibira.png" alt="Ibirá"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/jamaica.png" alt="Jamaica"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/abrakv.png" alt="KV Braçadeiras"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/lubefer.png" alt="Lubefer"></div>
+      </div>
+      <div class="supplier-card">
+        <div class="logo-plate"><img src="assets/fornecedores/multiconexoes.png" alt="Multi Conexões"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== CONTACT =================== -->
+<section class="contact section-padding" id="contact">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:60px" class="reveal">
+      <div class="eyebrow" style="justify-content:center">Entre em contato</div>
+      <h2 class="section-title">
+        Vamos construir sua <span class="accent">próxima solução</span>
+      </h2>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="contact-cards">
+          <a href="tel:+552126208687" class="contact-card">
+            <div class="ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            </div>
+            <div>
+              <div class="lbl">Telefone</div>
+              <div class="val">(21) 2620-8687</div>
+            </div>
+          </a>
+
+          <a href="mailto:adm.aerosteel@gmail.com" class="contact-card">
+            <div class="ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div class="lbl">E-mail</div>
+              <div class="val">adm.aerosteel@gmail.com</div>
+            </div>
+          </a>
+
+          <div class="contact-card">
+            <div class="ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="lbl">Endereço</div>
+              <div class="val">Rua Visconde de Itaboraí, 96<br>Niterói — RJ · CEP 24030-091</div>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <div class="ico">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <div>
+              <div class="lbl">Horário</div>
+              <div class="val">Seg a Sex · 08h às 18h<br>Sábado · 08h às 12h</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="map-wrap">
+          <iframe
+            src="https://www.google.com/maps?q=Rua+Visconde+de+Itabora%C3%AD,+96,+Niter%C3%B3i,+RJ&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Localização Aerosteel">
+          </iframe>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm">
+        <div class="form-row">
+          <div class="field">
+            <label>Nome completo</label>
+            <input type="text" name="nome" placeholder="Seu nome" required>
+          </div>
+          <div class="field">
+            <label>Empresa</label>
+            <input type="text" name="empresa" placeholder="Sua empresa">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="field">
+            <label>E-mail</label>
+            <input type="email" name="email" placeholder="email@empresa.com" required>
+          </div>
+          <div class="field">
+            <label>Telefone</label>
+            <input type="tel" name="telefone" placeholder="(21) 00000-0000" required>
+          </div>
+        </div>
+        <div class="field">
+          <label>Tipo de solicitação</label>
+          <select name="tipo">
+            <option>Orçamento de produtos</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Mensagem</label>
+          <textarea name="mensagem" placeholder="Descreva seu projeto ou necessidade..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">
+          Enviar Solicitação
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+        <div class="form-notice" id="formNotice">
+          ✓ Sua solicitação foi preparada — abrimos seu cliente de e-mail para envio a adm.aerosteel@gmail.com
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- =================== FOOTER =================== -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <div class="logo-mark">
+            <img src="assets/logo_icon.png" alt="Aerosteel">
+          </div>
+          <div class="logo-text">
+            <div class="brand">AERO<span>STEEL</span></div>
+            <div class="tag">Mangueiras e Conexões</div>
+          </div>
+        </a>
+        <p>
+          Referência em mangueiras, conexões e soluções hidráulicas para os
+          ambientes mais exigentes — industrial, naval e domiciliar.
+        </p>
+        <div class="socials">
+          <a href="#" class="social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="#" class="social" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+          </a>
+          <a href="#" class="social" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="https://wa.me/5521998408687" class="social" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="#suppliers">Fornecedores</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h5>Produtos</h5>
+        <ul>
+          <li><a href="#products">Mangueiras Hidráulicas</a></li>
+          <li><a href="#products">Conexões e Adaptadores</a></li>
+          <li><a href="#products">Flanges</a></li>
+          <li><a href="#products">Tubos & Acessórios</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h5>Contato</h5>
+        <p>Rua Visconde de Itaboraí, 96<br>Niterói — RJ · 24030-091</p>
+        <p>Tel: <a href="tel:+552126208687">(21) 2620-8687</a></p>
+        <p><a href="mailto:adm.aerosteel@gmail.com">adm.aerosteel@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© 2026 Aerosteel — Todos os direitos reservados.</p>
+      <p class="cnpj">CNPJ: 00.000.000/0001-00</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5521998408687" class="whatsapp-float" aria-label="WhatsApp" target="_blank" rel="noopener">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Header scroll
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Mobile menu
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+// Hero slider
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot-indicator');
+let current = 0;
+const total = slides.length;
+
+function goToSlide(i){
+  slides[current].classList.remove('active');
+  dots[current].classList.remove('active');
+  current = (i + total) % total;
+  slides[current].classList.add('active');
+  dots[current].classList.add('active');
+}
+
+document.getElementById('nextSlide').addEventListener('click', () => goToSlide(current + 1));
+document.getElementById('prevSlide').addEventListener('click', () => goToSlide(current - 1));
+dots.forEach((d, i) => d.addEventListener('click', () => goToSlide(i)));
+
+// Auto-rotate
+let auto = setInterval(() => goToSlide(current + 1), 6500);
+const heroSec = document.querySelector('.hero');
+heroSec.addEventListener('mouseenter', () => clearInterval(auto));
+heroSec.addEventListener('mouseleave', () => {
+  auto = setInterval(() => goToSlide(current + 1), 6500);
+});
+
+// Active nav link on scroll
+const sections = document.querySelectorAll('section[id]');
+const navLinks = document.querySelectorAll('.menu a');
+window.addEventListener('scroll', () => {
+  const pos = window.scrollY + 150;
+  sections.forEach(s => {
+    if (pos >= s.offsetTop && pos < s.offsetTop + s.offsetHeight){
+      navLinks.forEach(a => a.classList.remove('active'));
+      const link = document.querySelector(`.menu a[href="#${s.id}"]`);
+      if (link) link.classList.add('active');
+    }
+  });
+});
+
+// Reveal on scroll
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting){
+      e.target.classList.add('visible');
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: .12 });
+reveals.forEach(r => obs.observe(r));
+
+// Product card cursor-tracking glow
+document.querySelectorAll('.product-card').forEach(card => {
+  card.addEventListener('mousemove', (e) => {
+    const rect = card.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    card.style.setProperty('--mx', x + '%');
+    card.style.setProperty('--my', y + '%');
+  });
+});
+
+// Contact form - send to email via mailto
+const contactForm = document.getElementById('contactForm');
+const formNotice = document.getElementById('formNotice');
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const data = new FormData(contactForm);
+  const subject = encodeURIComponent('Solicitação de Orçamento — ' + (data.get('nome') || ''));
+  const body = encodeURIComponent(
+    'Nome: ' + (data.get('nome') || '') + '\n' +
+    'Empresa: ' + (data.get('empresa') || '') + '\n' +
+    'E-mail: ' + (data.get('email') || '') + '\n' +
+    'Telefone: ' + (data.get('telefone') || '') + '\n' +
+    'Tipo: ' + (data.get('tipo') || '') + '\n\n' +
+    'Mensagem:\n' + (data.get('mensagem') || '')
+  );
+  window.location.href = `mailto:adm.aerosteel@gmail.com?subject=${subject}&body=${body}`;
+  formNotice.classList.add('success');
+});
+</script>
+</body>
+</html>

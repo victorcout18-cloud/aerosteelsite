@@ -1,0 +1,2455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Linha de produtos Aerosteel — Mangueiras hidráulicas Balflex, a tecnologia europeia em soluções de alta pressão para os mais diversos segmentos industriais." />
+<title>Produtos — Aerosteel</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --orange:#F58220;
+  --orange-soft:#ff9533;
+  --orange-deep:#d96d10;
+  --bg:#0a0e14;
+  --bg-2:#0d1219;
+  --petrol:#0e1822;
+  --graphite:#1a2230;
+  --line:rgba(255,255,255,.08);
+  --line-strong:rgba(255,255,255,.14);
+  --text:#e8ecf2;
+  --muted:#9aa3b2;
+  --display:'Barlow Condensed',sans-serif;
+  --body:'Inter',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:var(--body);background:var(--bg);color:var(--text);
+  line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none;color:inherit}
+.container{max-width:1320px;margin:0 auto;padding:0 28px}
+
+/* ========== HEADER ========== */
+.header{
+  position:fixed;top:0;left:0;right:0;z-index:100;padding:14px 0;
+  transition:all .35s ease;background:rgba(8,11,16,.92);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line);
+}
+.header.scrolled{padding:10px 0}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:14px;flex-shrink:0}
+.logo-mark{width:96px;height:96px;display:grid;place-items:center;flex-shrink:0}
+.logo-mark img{width:100%;height:100%;object-fit:contain;display:block}
+.logo-text{display:flex;flex-direction:column;line-height:1;justify-content:center}
+.logo-text .brand{font-family:var(--display);font-weight:800;font-size:42px;letter-spacing:2px;color:#fff;line-height:.9}
+.logo-text .brand span{color:var(--orange)}
+.logo-text .tag{font-size:12px;font-weight:600;letter-spacing:3px;color:#bfbfbf;margin-top:10px;text-transform:uppercase}
+.menu{display:flex;align-items:center;gap:42px;list-style:none}
+.menu a{
+  font-size:13px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;
+  color:rgba(255,255,255,.78);position:relative;padding:8px 0;transition:color .25s ease;
+}
+.menu a::after{
+  content:"";position:absolute;left:50%;bottom:0;width:0;height:2px;
+  background:var(--orange);transition:all .3s ease;transform:translateX(-50%);
+}
+.menu a:hover, .menu a.active{color:#fff}
+.menu a:hover::after, .menu a.active::after{width:24px}
+.menu a.active{color:var(--orange)}
+.cta-btn{
+  background:var(--orange);color:#fff;font-size:12px;font-weight:700;
+  letter-spacing:1.6px;text-transform:uppercase;padding:14px 22px;
+  border-radius:6px;display:inline-flex;align-items:center;gap:10px;
+  box-shadow:0 8px 24px -8px rgba(245,130,32,.55);
+  transition:all .3s ease;white-space:nowrap;
+}
+.cta-btn:hover{
+  background:var(--orange-soft);transform:translateY(-2px);
+  box-shadow:0 14px 32px -10px rgba(245,130,32,.7);
+}
+.menu-toggle{
+  display:none;width:42px;height:42px;border-radius:6px;
+  background:rgba(255,255,255,.06);border:1px solid var(--line);
+  align-items:center;justify-content:center;
+}
+.menu-toggle svg{width:22px;height:22px;stroke:#fff}
+
+/* ========== CATALOG HERO ========== */
+.cat-hero{
+  position:relative;padding:180px 0 80px;
+  background:
+    radial-gradient(ellipse at 20% 50%, rgba(245,130,32,.08) 0%, transparent 50%),
+    linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%);
+  overflow:hidden;border-bottom:1px solid var(--line);
+}
+.cat-hero::before{
+  content:"";position:absolute;inset:0;
+  background-image:radial-gradient(rgba(255,255,255,.04) 1px, transparent 1px);
+  background-size:24px 24px;pointer-events:none;
+  mask-image:linear-gradient(180deg, transparent, black 30%, black 70%, transparent);
+  -webkit-mask-image:linear-gradient(180deg, transparent, black 30%, black 70%, transparent);
+}
+.cat-hero-inner{
+  position:relative;z-index:2;display:grid;
+  grid-template-columns:1.4fr 1fr;gap:60px;align-items:center;
+}
+.breadcrumb{
+  display:flex;align-items:center;gap:10px;
+  font-size:11px;font-weight:600;letter-spacing:2.5px;
+  text-transform:uppercase;color:var(--muted);margin-bottom:24px;
+}
+.breadcrumb a{color:var(--muted);transition:color .2s}
+.breadcrumb a:hover{color:var(--orange)}
+.breadcrumb svg{width:10px;height:10px;stroke:var(--muted)}
+.breadcrumb .current{color:var(--orange)}
+.cat-hero h1{
+  font-family:var(--display);font-size:clamp(48px, 6vw, 84px);
+  font-weight:800;line-height:.96;letter-spacing:-.5px;text-transform:uppercase;
+  color:#fff;margin-bottom:20px;
+}
+.cat-hero h1 .accent{color:var(--orange);display:block}
+.cat-hero p.lead{
+  max-width:540px;font-size:16px;line-height:1.7;color:#b8c0cc;margin-bottom:14px;
+}
+.cat-hero p.tech-note{
+  font-size:13px;color:var(--muted);font-style:italic;
+  border-left:2px solid var(--orange);padding-left:14px;max-width:480px;
+}
+.cat-hero-stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.stat-card{
+  padding:22px 24px;background:rgba(255,255,255,.025);
+  border:1px solid var(--line);border-radius:12px;position:relative;overflow:hidden;
+}
+.stat-card::before{
+  content:"";position:absolute;top:0;left:18px;right:18px;height:1px;
+  background:linear-gradient(90deg,
+    rgba(245,130,32,0) 0%, rgba(245,130,32,.45) 18%,
+    rgba(245,130,32,.45) 82%, rgba(245,130,32,0) 100%);
+}
+.stat-card .num{
+  font-family:var(--display);font-size:42px;font-weight:800;
+  color:var(--orange);line-height:1;letter-spacing:-1px;
+}
+.stat-card .lbl{
+  font-size:11px;font-weight:600;letter-spacing:1.8px;
+  text-transform:uppercase;color:var(--muted);margin-top:8px;
+}
+
+/* ========== FILTER BAR ========== */
+.filter-bar{
+  position:sticky;top:124px;z-index:50;
+  background:rgba(13,18,25,.95);backdrop-filter:blur(14px);
+  -webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--line);
+  padding:18px 0;
+}
+.filter-row{
+  display:flex;align-items:center;gap:14px;
+  overflow-x:auto;scrollbar-width:none;
+}
+.filter-row::-webkit-scrollbar{display:none}
+.filter-label{
+  font-size:11px;font-weight:700;letter-spacing:2px;
+  text-transform:uppercase;color:var(--orange);
+  white-space:nowrap;display:flex;align-items:center;gap:10px;
+}
+.filter-label::after{
+  content:"";width:1px;height:18px;background:var(--line-strong);margin-left:6px;
+}
+.cat-chip{
+  padding:10px 18px;border:1px solid var(--line-strong);
+  background:rgba(255,255,255,.03);border-radius:50px;
+  font-size:12.5px;font-weight:600;letter-spacing:.5px;
+  color:#d5dae3;white-space:nowrap;transition:all .25s ease;cursor:pointer;
+}
+.cat-chip:hover{
+  border-color:rgba(245,130,32,.45);background:rgba(245,130,32,.06);color:#fff;
+}
+.cat-chip.active{
+  background:var(--orange);border-color:var(--orange);color:#fff;
+  box-shadow:0 6px 18px -6px rgba(245,130,32,.55);
+}
+
+/* ========== CATEGORY SECTIONS ========== */
+.catalog{padding:80px 0 100px}
+.cat-section{margin-bottom:90px;scroll-margin-top:200px}
+.cat-section:last-child{margin-bottom:0}
+.cat-header{
+  display:flex;align-items:flex-end;justify-content:space-between;
+  gap:30px;margin-bottom:36px;padding-bottom:22px;
+  border-bottom:1px solid var(--line);flex-wrap:wrap;
+}
+.cat-header-left{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.cat-num{
+  font-family:var(--display);font-size:18px;font-weight:700;
+  color:var(--orange);letter-spacing:1px;
+  display:flex;align-items:center;gap:10px;
+}
+.cat-num::before{content:"";width:36px;height:1px;background:var(--orange)}
+.cat-section h2{
+  font-family:var(--display);font-size:clamp(30px, 3.5vw, 46px);
+  font-weight:800;line-height:1;letter-spacing:-.3px;
+  text-transform:uppercase;color:#fff;
+}
+.cat-supplier{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:11px;font-weight:600;letter-spacing:1.8px;
+  text-transform:uppercase;color:var(--muted);
+  padding:5px 11px;background:rgba(255,255,255,.04);
+  border:1px solid var(--line);border-radius:50px;
+}
+.cat-supplier::before{
+  content:"";width:6px;height:6px;border-radius:50%;background:var(--orange);
+}
+.cat-count{
+  font-size:13px;color:var(--muted);
+  letter-spacing:1.5px;text-transform:uppercase;font-weight:600;
+}
+.cat-count strong{color:var(--orange);font-weight:700}
+
+/* ========== ITEM CARDS ========== */
+.items-grid{
+  display:grid;grid-template-columns:repeat(4, 1fr);gap:18px;
+}
+.item-card{
+  position:relative;background:#ffffff;
+  border:1px solid rgba(0,0,0,.06);border-radius:14px;
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .45s cubic-bezier(.2,.7,.2,1),
+             border-color .35s ease, box-shadow .45s ease;
+}
+.item-card:hover{
+  transform:translateY(-8px);
+  border-color:rgba(245,130,32,.5);
+  box-shadow:0 24px 48px -16px rgba(0,0,0,.45),
+             0 0 0 1px rgba(245,130,32,.18);
+}
+.item-img-wrap{
+  position:relative;aspect-ratio:4/3;background:#ffffff;
+  display:grid;place-items:center;overflow:hidden;
+}
+.item-img-wrap img{
+  width:100%;height:100%;object-fit:contain;padding:18px;
+  mix-blend-mode:multiply;
+  filter:brightness(1.04) contrast(1.05);
+  transition:transform .6s cubic-bezier(.2,.7,.2,1), filter .35s ease;
+}
+.item-card:hover .item-img-wrap img{
+  transform:scale(1.06);
+  filter:brightness(1.07) contrast(1.07);
+}
+
+/* Ilustração SVG técnica do item */
+.item-illust{
+  width:100%;height:100%;
+  background:#ffffff;
+  display:grid;place-items:center;position:relative;overflow:hidden;
+}
+/* SVG preenche o espaço com padding e mistura ao fundo branco do card */
+.item-illust svg{
+  width:100%;height:100%;
+  padding:8px;
+  mix-blend-mode:multiply;
+  filter:brightness(1.02) contrast(1.04);
+  transition:transform .6s cubic-bezier(.2,.7,.2,1), filter .35s ease;
+}
+.item-card:hover .item-illust svg{
+  transform:scale(1.05);
+  filter:brightness(1.04) contrast(1.06);
+}
+.item-illust .placeholder-icon{
+  font-family:var(--display);font-size:38px;font-weight:800;
+  color:rgba(10,14,20,.18);letter-spacing:-1px;
+  position:relative;z-index:2;text-align:center;line-height:1;padding:0 12px;
+}
+.item-illust .placeholder-icon small{
+  display:block;font-size:10px;font-weight:600;letter-spacing:2px;
+  color:rgba(10,14,20,.3);margin-top:8px;text-transform:uppercase;
+}
+
+/* Brand tag */
+.item-brand{
+  position:absolute;top:12px;left:12px;z-index:3;
+  font-size:9.5px;font-weight:700;letter-spacing:1.3px;
+  text-transform:uppercase;color:#fff;
+  padding:4px 9px;background:rgba(10,14,20,.85);
+  border-radius:4px;backdrop-filter:blur(4px);
+}
+.item-brand.brand-balflex{background:rgba(10,14,20,.85);color:var(--orange)}
+.item-brand.brand-multi{background:rgba(10,14,20,.85);color:#5fb1ff}
+.item-brand.brand-funguap{background:rgba(10,14,20,.85);color:#ffd33d}
+
+/* Content */
+.item-content{
+  background:#ffffff;padding:18px 20px 22px;
+  flex:1;display:flex;flex-direction:column;position:relative;
+}
+.item-content::before{
+  content:"";position:absolute;top:0;left:20px;right:20px;height:1px;
+  background:linear-gradient(90deg,
+    rgba(245,130,32,0) 0%, rgba(245,130,32,.5) 18%,
+    rgba(245,130,32,.5) 82%, rgba(245,130,32,0) 100%);
+  transition:background .35s ease;
+}
+.item-card:hover .item-content::before{
+  background:linear-gradient(90deg,
+    rgba(245,130,32,0) 0%, rgba(245,130,32,.95) 18%,
+    rgba(245,130,32,.95) 82%, rgba(245,130,32,0) 100%);
+}
+.item-norm{
+  font-family:var(--display);font-size:11px;font-weight:700;
+  letter-spacing:1.8px;color:var(--orange);
+  margin-bottom:6px;text-transform:uppercase;
+}
+.item-name{
+  font-family:var(--display);font-size:14.5px;font-weight:700;
+  line-height:1.28;color:#0a0e14;margin-bottom:14px;
+  text-transform:uppercase;letter-spacing:.2px;
+  /* uniformidade: 4 linhas reservadas (titulos tecnicos longos) */
+  min-height:calc(14.5px * 1.28 * 4);
+  display:-webkit-box;-webkit-line-clamp:4;-webkit-box-orient:vertical;
+  overflow:hidden;
+}
+.item-name .reg{
+  font-size:.7em;vertical-align:super;font-weight:600;
+  color:rgba(10,14,20,.55);margin:0 .05em;
+}
+.item-desc{
+  font-size:12.5px;line-height:1.55;color:#5a6373;margin-bottom:14px;
+}
+
+/* Size selector — the key UX element */
+.size-selector{
+  margin-bottom:14px;
+}
+.size-selector label{
+  display:block;font-size:10px;font-weight:700;letter-spacing:1.5px;
+  text-transform:uppercase;color:#7a8294;margin-bottom:6px;
+}
+.size-select-wrap{
+  position:relative;
+}
+.size-select{
+  appearance:none;-webkit-appearance:none;-moz-appearance:none;
+  width:100%;padding:11px 38px 11px 14px;
+  background:#f4f6fa;border:1px solid rgba(0,0,0,.08);
+  border-radius:7px;font-family:var(--body);
+  font-size:13px;font-weight:600;color:#0a0e14;
+  cursor:pointer;transition:all .25s ease;
+}
+.size-select:hover{
+  background:#fff;border-color:rgba(245,130,32,.4);
+}
+.size-select:focus{
+  outline:none;border-color:var(--orange);
+  box-shadow:0 0 0 3px rgba(245,130,32,.15);
+}
+.size-select-wrap::after{
+  content:"";position:absolute;right:14px;top:50%;
+  width:8px;height:8px;border-right:2px solid var(--orange);
+  border-bottom:2px solid var(--orange);
+  transform:translateY(-70%) rotate(45deg);
+  pointer-events:none;
+}
+
+/* Dynamic specs that update with selection */
+.item-specs{
+  display:flex;flex-wrap:wrap;gap:6px;
+  padding-top:12px;border-top:1px dashed rgba(0,0,0,.08);
+  margin-bottom:14px;
+}
+.spec{
+  font-size:10.5px;font-weight:600;letter-spacing:.6px;
+  text-transform:uppercase;padding:5px 10px;
+  background:#f4f6fa;border:1px solid rgba(0,0,0,.06);
+  border-radius:4px;color:#3a4252;
+  transition:all .3s ease;
+}
+.spec.spec-primary{
+  background:rgba(245,130,32,.1);
+  border-color:rgba(245,130,32,.25);
+  color:var(--orange-deep);
+}
+.spec.updated{
+  animation:specPulse .6s ease;
+}
+@keyframes specPulse{
+  0%{transform:scale(1);background:rgba(245,130,32,.25)}
+  50%{transform:scale(1.04);background:rgba(245,130,32,.4)}
+  100%{transform:scale(1);background:rgba(245,130,32,.1)}
+}
+
+/* Tamanhos disponíveis (Ø nom) — bloco discreto */
+.item-sizes{
+  margin-bottom:14px;padding:10px 12px;
+  background:#f7f8fb;border:1px solid rgba(0,0,0,.05);
+  border-radius:6px;
+}
+.item-sizes-label{
+  font-size:9px;font-weight:700;letter-spacing:1.4px;
+  text-transform:uppercase;color:#8a93a4;margin-bottom:6px;
+  display:flex;align-items:center;gap:6px;
+}
+.item-sizes-label::before{
+  content:"Ø";font-family:var(--display);font-size:12px;
+  color:var(--orange);font-weight:800;letter-spacing:0;
+}
+.item-sizes-list{
+  display:flex;flex-wrap:wrap;gap:4px;
+}
+.size-tag{
+  font-family:var(--display);font-size:10.5px;font-weight:600;
+  letter-spacing:.3px;color:#3a4252;
+  padding:2px 7px;background:#fff;
+  border:1px solid rgba(0,0,0,.08);
+  border-radius:3px;line-height:1.4;
+}
+.item-card:hover .size-tag{border-color:rgba(245,130,32,.25)}
+
+.item-cta{
+  margin-top:auto;display:inline-flex;align-items:center;gap:8px;
+  font-size:11.5px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;
+  color:#0a0e14;opacity:.7;transition:all .3s ease;
+  padding-top:10px;border-top:1px solid rgba(0,0,0,.06);
+}
+.item-cta svg{width:13px;height:13px;transition:transform .3s ease}
+.item-card:hover .item-cta{color:var(--orange);opacity:1;gap:12px}
+.item-card:hover .item-cta svg{transform:translateX(2px)}
+
+/* ========== BOTTOM CTA ========== */
+.cat-cta{
+  background:linear-gradient(135deg, var(--bg-2) 0%, var(--bg) 100%);
+  padding:80px 0;border-top:1px solid var(--line);
+  position:relative;overflow:hidden;
+}
+.cat-cta::before{
+  content:"";position:absolute;bottom:-200px;right:-200px;
+  width:500px;height:500px;
+  background:radial-gradient(circle, rgba(245,130,32,.1) 0%, transparent 60%);
+  pointer-events:none;
+}
+.cat-cta-inner{
+  display:grid;grid-template-columns:1.5fr 1fr;
+  gap:50px;align-items:center;position:relative;
+}
+.cat-cta h2{
+  font-family:var(--display);font-size:clamp(32px, 4vw, 52px);
+  font-weight:800;line-height:1.05;text-transform:uppercase;
+  color:#fff;margin-bottom:18px;
+}
+.cat-cta h2 .accent{color:var(--orange)}
+.cat-cta p{color:var(--muted);font-size:16px;line-height:1.7;max-width:520px}
+.cat-cta-actions{display:flex;flex-direction:column;gap:12px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:12px;
+  padding:18px 26px;border-radius:6px;
+  font-size:13px;font-weight:700;letter-spacing:1.6px;
+  text-transform:uppercase;transition:all .3s ease;cursor:pointer;
+}
+.btn-primary{
+  background:var(--orange);color:#fff;
+  box-shadow:0 14px 36px -10px rgba(245,130,32,.5);
+}
+.btn-primary:hover{
+  background:var(--orange-soft);transform:translateY(-3px);
+  box-shadow:0 18px 40px -10px rgba(245,130,32,.65);
+}
+.btn-outline{
+  background:rgba(8,11,16,.55);color:#fff;
+  border:1.5px solid rgba(255,255,255,.22);
+}
+.btn-outline:hover{
+  border-color:var(--orange);background:rgba(245,130,32,.08);transform:translateY(-3px);
+}
+.btn svg{width:16px;height:16px}
+
+/* ========== FOOTER ========== */
+.footer{background:#04060a;border-top:1px solid var(--line);padding:80px 0 0}
+.footer-grid{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;
+  gap:60px;margin-bottom:60px;
+}
+.footer h5{
+  font-family:var(--display);font-size:14px;font-weight:700;
+  letter-spacing:2px;text-transform:uppercase;color:#fff;
+  margin-bottom:24px;position:relative;padding-bottom:14px;
+}
+.footer h5::after{
+  content:"";position:absolute;left:0;bottom:0;
+  width:30px;height:2px;background:var(--orange);
+}
+.footer p, .footer a{
+  color:var(--muted);font-size:14px;line-height:1.8;transition:color .25s ease;
+}
+.footer a:hover{color:var(--orange)}
+.footer ul{list-style:none}
+.footer ul li{margin-bottom:10px}
+.footer-brand p{margin-top:18px;max-width:320px}
+.footer-contact p{margin-bottom:8px;word-break:break-word}
+.socials{display:flex;gap:10px;margin-top:22px}
+.social{
+  width:38px;height:38px;display:grid;place-items:center;
+  background:rgba(255,255,255,.04);border:1px solid var(--line);
+  border-radius:8px;transition:all .3s ease;
+}
+.social svg{width:16px;height:16px;stroke:var(--muted);transition:stroke .25s ease}
+.social:hover{background:var(--orange);border-color:var(--orange);transform:translateY(-3px)}
+.social:hover svg{stroke:#fff}
+.copyright{
+  border-top:1px solid var(--line);padding:24px 0;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:14px;
+}
+.copyright p{font-size:12.5px;color:var(--muted);letter-spacing:.4px}
+.copyright .cnpj{font-size:12px;color:var(--muted);letter-spacing:1px}
+.whatsapp-float{
+  position:fixed;right:24px;bottom:24px;
+  width:58px;height:58px;background:#25D366;
+  border-radius:50%;display:grid;place-items:center;
+  box-shadow:0 14px 36px -10px rgba(37,211,102,.55);
+  z-index:90;transition:transform .3s ease;
+}
+.whatsapp-float:hover{transform:scale(1.1)}
+.whatsapp-float svg{width:30px;height:30px;fill:#fff}
+
+.mobile-menu{
+  display:none;position:fixed;top:0;left:0;right:0;bottom:0;
+  background:rgba(5,8,12,.98);backdrop-filter:blur(20px);
+  z-index:99;padding:100px 30px 30px;flex-direction:column;gap:8px;
+}
+.mobile-menu.open{display:flex}
+.mobile-menu a{
+  font-family:var(--display);font-size:24px;font-weight:700;
+  letter-spacing:1.5px;text-transform:uppercase;color:#fff;
+  padding:18px 0;border-bottom:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;
+}
+
+.reveal{opacity:0;transform:translateY(30px);transition:all .8s cubic-bezier(.2,.7,.2,1)}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+@media (max-width: 1100px){
+  .items-grid{grid-template-columns:repeat(3, 1fr)}
+  .cat-hero-inner{grid-template-columns:1fr;gap:40px}
+  .cat-hero-stats{max-width:480px}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:40px}
+  .cat-cta-inner{grid-template-columns:1fr;gap:30px}
+}
+@media (max-width: 880px){
+  .menu, .cta-btn{display:none}
+  .menu-toggle{display:flex}
+  .items-grid{grid-template-columns:repeat(2, 1fr)}
+  .cat-hero{padding:140px 0 60px}
+  .cat-hero h1{font-size:clamp(38px, 8vw, 60px)}
+  .filter-bar{top:104px}
+  .logo-text .brand{font-size:28px;letter-spacing:1.5px}
+  .logo-text .tag{font-size:10px;letter-spacing:2.2px;margin-top:6px}
+  .logo-mark{width:74px;height:74px}
+  .logo{gap:13px}
+  .copyright{flex-direction:column;text-align:center}
+}
+@media (max-width: 520px){
+  .container{padding:0 20px}
+  .items-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr}
+  .cat-hero-stats{grid-template-columns:1fr}
+  .cat-hero h1{font-size:42px}
+}
+</style>
+</head>
+<body>
+
+<!-- ============= HEADER ============= -->
+<header class="header" id="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">
+      <div class="logo-mark"><img src="assets/logo_icon.png" alt="Aerosteel"></div>
+      <div class="logo-text">
+        <div class="brand">AERO<span>STEEL</span></div>
+        <div class="tag">Mangueiras e Conexões</div>
+      </div>
+    </a>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html#home">Início</a></li>
+        <li><a href="index.html#about">Sobre</a></li>
+        <li><a href="produtos.html" class="active">Produtos</a></li>
+        <li><a href="index.html#suppliers">Fornecedores</a></li>
+        <li><a href="index.html#contact">Contato</a></li>
+      </ul>
+    </nav>
+    <a href="index.html#contact" class="cta-btn">
+      Solicitar Orçamento
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html#home">Início <span style="color:var(--orange)">→</span></a>
+  <a href="index.html#about">Sobre <span style="color:var(--orange)">→</span></a>
+  <a href="produtos.html">Produtos <span style="color:var(--orange)">→</span></a>
+  <a href="index.html#suppliers">Fornecedores <span style="color:var(--orange)">→</span></a>
+  <a href="index.html#contact">Contato <span style="color:var(--orange)">→</span></a>
+  <a href="index.html#contact" class="cta-btn">Solicitar Orçamento</a>
+</div>
+
+<!-- ============= HERO ============= -->
+<section class="cat-hero">
+  <div class="container cat-hero-inner">
+    <div>
+      <div class="breadcrumb">
+        <a href="index.html">Início</a>
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M9 18l6-6-6-6"/></svg>
+        <span class="current">Produtos</span>
+      </div>
+      <h1>Mangueiras<span class="accent">Balflex</span></h1>
+      <p class="lead">
+        Linha completa de mangueiras Balflex — a tecnologia europeia em
+        soluções hidráulicas e industriais de baixa, média, alta e altíssima
+        pressão, com reforço têxtil, em aço, aramida ou aço inox.
+      </p>
+      <p class="tech-note">
+        Mostruário de referência. Disponibilidade, bitolas, séries especiais e
+        certificações sob consulta — entre em contato para orçamento.
+      </p>
+    </div>
+    <div class="cat-hero-stats">
+      <div class="stat-card">
+        <div class="num">62</div>
+        <div class="lbl">Séries em linha</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">1/8″–8″</div>
+        <div class="lbl">Faixa de bitolas</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">2.5–10:1</div>
+        <div class="lbl">Fator de segurança</div>
+      </div>
+      <div class="stat-card">
+        <div class="num">SAE/DIN/ISO</div>
+        <div class="lbl">Normas atendidas</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============= MAIN CATALOG ============= -->
+<main class="catalog">
+  <div class="container">
+
+    <section class="cat-section reveal" id="mangueiras-balflex">
+      <div class="cat-header">
+        <div class="cat-header-left">
+          <span class="cat-num">01</span>
+          <h2>Mangueiras Hidráulicas</h2>
+          <span class="cat-supplier">Balflex</span>
+        </div>
+        <span class="cat-count"><strong>33</strong> séries em linha</span>
+      </div>
+
+      <div class="items-grid">
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/texmaster-1.jpg" alt="Mangueira Balflex TEXMASTER 1" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">TEXMASTER<sup class="reg">®</sup> 1 DIN EN 854 1TE / SAE 100R6 – 10.1216</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">7/8"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/texmaster-3.jpg" alt="Mangueira Balflex TEXMASTER 3" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">TEXMASTER<sup class="reg">®</sup> 3 SAE 100R3 – 10.1220</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/tornare-4.jpg" alt="Mangueira Balflex TORNARE 4" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">TORNARE<sup class="reg">®</sup> 4 — SAE 100R4 – 10.1219</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">3.1/2"</span>
+              <span class="size-tag">4"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/forza-uno.jpg" alt="Mangueira Balflex FORZA UNO" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">FORZA UNO<sup class="reg">®</sup> DIN EN 853 1SN / SAE 100R1AT – 10.1002</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/forza-due.jpg" alt="Mangueira Balflex FORZA DUE" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">FORZA DUE<sup class="reg">®</sup> DIN EN 853 2SN / SAE 100R2AT – 10.1004</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/balpac-3000.jpg" alt="Mangueira Balflex BALPAC 3000" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">BALPAC<sup class="reg">®</sup> 3000 SAE 100R17 / DIN EN 857 – 10.1017</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/balpac-3000-smooth.jpg" alt="Mangueira Balflex BALPAC 3000 Smooth" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">BALPAC<sup class="reg">®</sup> 3000 SMOOTH SAE 100R17 / DIN EN 857 – 10.1S17</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/balmaster-r12.jpg" alt="Mangueira Balflex BALMASTER R12" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">BALMASTER<sup class="reg">®</sup> SAE 100R12 / DIN EN 856 R12 – 10.1012</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/balmaster-4sp.jpg" alt="Mangueira Balflex BALMASTER 4SP" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">BALMASTER<sup class="reg">®</sup> DIN EN 856 4SP – 10.1008</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/powerspir-4sh.jpg" alt="Mangueira Balflex POWERSPIR 4SH" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">POWERSPIR<sup class="reg">®</sup> DIN EN 856 4SH – 10.1009</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/powerspir-r13.jpg" alt="Mangueira Balflex POWERSPIR R13" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">POWERSPIR<sup class="reg">®</sup> SAE 100R13 – 10.1014 — 5000 PSI</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/powerspir-r15.jpg" alt="Mangueira Balflex POWERSPIR R15" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">POWERSPIR<sup class="reg">®</sup> SAE 100R15 – 10.1016 — 6000 PSI</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/balmaster-bestflex-r12.jpg" alt="Mangueira Balflex BALMASTER BESTFLEX R12" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">BALMASTER<sup class="reg">®</sup> BESTFLEX<sup class="reg">®</sup> SAE 100R12 / DIN EN 856 R12 – 10.1012.F</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/balmaster-bestflex-4sp.jpg" alt="Mangueira Balflex BALMASTER BESTFLEX 4SP" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">BALMASTER<sup class="reg">®</sup> BESTFLEX<sup class="reg">®</sup> DIN EN 856 4SP – 10.1008.F</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/powerspir-bestflex-4sh.jpg" alt="Mangueira Balflex POWERSPIR BESTFLEX 4SH" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">POWERSPIR<sup class="reg">®</sup> BESTFLEX<sup class="reg">®</sup> DIN EN 856 4SH – 10.1009.F</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/powerspir-bestflex-r13.jpg" alt="Mangueira Balflex POWERSPIR BESTFLEX R13" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">POWERSPIR<sup class="reg">®</sup> BESTFLEX<sup class="reg">®</sup> SAE 100R13 – 10.1014.F — 5000 PSI</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/powerspir-bestflex-r15.jpg" alt="Mangueira Balflex POWERSPIR BESTFLEX R15" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">POWERSPIR<sup class="reg">®</sup> BESTFLEX<sup class="reg">®</sup> SAE 100R15 – 10.1016.F — 6000 PSI</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/brakemaster-r5.jpg" alt="Mangueira Balflex BRAKEMASTER SAE 100R5" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">BRAKEMASTER<sup class="reg">®</sup> SAE 100R5 / SAE J1402 AII – 10.1007</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">13/32"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">7/8"</span>
+              <span class="size-tag">1.1/8"</span>
+              <span class="size-tag">1.3/8"</span>
+              <span class="size-tag">1.13/16"</span>
+              <span class="size-tag">2.3/8"</span>
+              <span class="size-tag">3"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/max-jack.jpg" alt="Mangueira Balflex 2-MAX JACK" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">2 – MAX JACK – 10.1029</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/sae-100r7.jpg" alt="Mangueira Balflex SAE 100R7" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">EN 855 R7 / SAE 100R7 – 10.1030</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/8"</span>
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/twin-sae-100r7.jpg" alt="Mangueira Balflex TWIN SAE 100R7" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">TWIN EN 855 R7 / SAE 100R7 – 10.1034</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/non-conductive.jpg" alt="Mangueira Balflex NON CONDUCTIVE" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">NON CONDUCTIVE EN 855 R7 / SAE 100R7 – 10.1030.L</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/8"</span>
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/non-conductive-twin.jpg" alt="Mangueira Balflex NON CONDUCTIVE TWIN" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">TWIN NON CONDUCTIVE EN 855 R7 / SAE 100R7 – 10.1034.L</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/steel.jpg" alt="Mangueira Balflex STEEL" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">STEEL EXCEEDS EN 855 R7 / SAE 100R7 – 10.1031</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/8"</span>
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/steel-twin.jpg" alt="Mangueira Balflex STEEL TWIN" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">STEEL TWIN EXCEEDS EN 855 R7 / SAE 100R7 – 10.1035</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/omegaflex-r8.jpg" alt="Mangueira Balflex OMEGAFLEX NON CONDUCTIVE PLUS R8" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">OMEGAFLEX<sup class="reg">®</sup> PLUS EN 855 R8 / SAE 100R8 – 10.1033.L</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/ultraflex-r9.jpg" alt="Mangueira Balflex ULTRAFLEX R9" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">ULTRAFLEX R9 – 10.1038</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/balflon-r14.jpg" alt="Mangueira Balflex BALFLON SAE 100R14" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">BALFLON<sup class="reg">®</sup> P.T.F.E. LISO SAE 100R14 – 10.2000</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/8"</span>
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">13/32"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">7/8"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/8"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/balflon-corrugado.jpg" alt="Mangueira Balflex BALFLON Corrugado" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">BALFLON<sup class="reg">®</sup> CORRUGADO P.T.F.E. – 10.2010</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/kombat-1-2.jpg" alt="Mangueira Balflex KOMBAT 1 / KOMBAT 2" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">KOMBAT<sup class="reg">®</sup> 1 – 10.1190 / KOMBAT<sup class="reg">®</sup> 2 – 10.1290</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">3/8"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/tropic-1.jpg" alt="Mangueira Balflex TROPIC 1" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">TROPIC 1 DIN EN 853 1SN / SAE 100R1AT – 10.1002.--HT</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/tropic-2.jpg" alt="Mangueira Balflex TROPIC 2" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">TROPIC 2 DIN EN 853 2SN / SAE 100R2AT – 10.1004.--HT</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/heatmaster-r5r.jpg" alt="Mangueira Balflex HEATMASTER SAE 100R5R" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Hidráulica</div>
+          <h3 class="item-name">HEATMASTER<sup class="reg">®</sup> SAE 100R5R 150°C / 302°F – 10.1006.--HT</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">13/32"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">7/8"</span>
+              <span class="size-tag">1.1/8"</span>
+              <span class="size-tag">1.3/8"</span>
+              <span class="size-tag">1.13/16"</span>
+              <span class="size-tag">2.3/8"</span>
+              <span class="size-tag">3"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      </div>
+    </section>
+
+    <section class="cat-section reveal" id="mangueiras-industriais">
+      <div class="cat-header">
+        <div class="cat-header-left">
+          <span class="cat-num">02</span>
+          <h2>Mangueiras Industriais</h2>
+          <span class="cat-supplier">Balflex</span>
+        </div>
+        <span class="cat-count"><strong>29</strong> séries em linha</span>
+      </div>
+
+      <div class="items-grid">
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/airmaster-preta.jpg" alt="Mangueira Balflex AIRMASTER Preta" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">AIRMASTER<sup class="reg">®</sup> PRETA – 10.1232</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/airmaster-amarela.jpg" alt="Mangueira Balflex AIRMASTER Amarela" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">AIRMASTER<sup class="reg">®</sup> AMARELA – 10.1232.--Y</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/flatdrill-15.jpg" alt="Mangueira Balflex FLATDRILL 15" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">FLATDRILL<sup class="reg">®</sup> 15 AIR & WATER – 10.3040 / 10.3041</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+              <span class="size-tag">5"</span>
+              <span class="size-tag">6"</span>
+              <span class="size-tag">8"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/flatdrill-20.jpg" alt="Mangueira Balflex FLATDRILL 20" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">FLATDRILL<sup class="reg">®</sup> 20 AIR & WATER – 10.3050 / 10.3051</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+              <span class="size-tag">5"</span>
+              <span class="size-tag">6"</span>
+              <span class="size-tag">8"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/multipurpose.jpg" alt="Mangueira Balflex MULTIPURPOSE" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">MULTIPURPOSE OIL, FUEL & GASOLINE 20BAR / 300PSI – 10.1215</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/welding-simples.jpg" alt="Mangueira Balflex WELDING Simples" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">WELDING SIMPLES – Solda Oxigênio e Acetileno – 10.1227</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">5/16"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/welding-dupla.jpg" alt="Mangueira Balflex WELDING Dupla" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">WELDING DUPLA – Solda Oxigênio e Acetileno – 10.1228</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">5/16"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/fuel-pump-steel.jpg" alt="Mangueira Balflex FUEL PUMP STEEL" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">FUEL PUMP STEEL – Bomba de Combustível – 10.1222</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/cng-gnv.jpg" alt="Mangueira Balflex CNG GNV" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">CNG – GNV – Eletricamente Condutiva – 10.1037</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">3/8"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/acqua.jpg" alt="Mangueira Balflex ACQUA" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">ACQUA – Descarga Ar & Água – 10.1235</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+              <span class="size-tag">5"</span>
+              <span class="size-tag">6"</span>
+              <span class="size-tag">8"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/acquatank.jpg" alt="Mangueira Balflex ACQUATANK" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">ACQUATANK – Sucção & Descarga Ar & Água – 10.1237</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+              <span class="size-tag">5"</span>
+              <span class="size-tag">6"</span>
+              <span class="size-tag">8"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/oiltank.jpg" alt="Mangueira Balflex OILTANK" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">OILTANK – Descarga de Petróleos – 10.1238</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+              <span class="size-tag">5"</span>
+              <span class="size-tag">6"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/autotank.jpg" alt="Mangueira Balflex AUTOTANK" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">AUTOTANK<sup class="reg">®</sup> – Sucção & Descarga Petróleos – 10.1236</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">3.1/2"</span>
+              <span class="size-tag">4"</span>
+              <span class="size-tag">5"</span>
+              <span class="size-tag">6"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/petro-oiltank-50.jpg" alt="Mangueira Balflex PETRO OILTANK 50" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">PETRO OILTANK 50 – Descarga de Petróleos – 10.1249</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+              <span class="size-tag">5"</span>
+              <span class="size-tag">6"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/petrotank-truck-50.jpg" alt="Mangueira Balflex PETROTANK TRUCK 50" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">PETROTANK TRUCK 50 – Sucção & Descarga – 10.1245</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">3.1/2"</span>
+              <span class="size-tag">4"</span>
+              <span class="size-tag">5"</span>
+              <span class="size-tag">6"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/baldrill-mine-amarela.jpg" alt="Mangueira Balflex BALDRILL MINE Amarela" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">BALDRILL<sup class="reg">®</sup> MINE AMARELA – 10.1233</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/baldrill-mine-preta.jpg" alt="Mangueira Balflex BALDRILL MINE Preta" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">BALDRILL<sup class="reg">®</sup> MINE PRETA – 10.1233.--B</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/baldrill-steel-uno.jpg" alt="Mangueira Balflex BALDRILL STEEL UNO" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">BALDRILL<sup class="reg">®</sup> STEEL UNO – 10.1242</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/baldrill-steel-duo.jpg" alt="Mangueira Balflex BALDRILL STEEL DUO" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">BALDRILL<sup class="reg">®</sup> STEEL DUO – 10.1243</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/sandblast.jpg" alt="Mangueira Balflex SANDBLAST" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">SANDBLAST – Jateamento de Areia – 10.1240</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/waterblast-1100.jpg" alt="Mangueira Balflex WATERBLAST 1100" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">WATERBLAST 1100 – Hidrojateamento – 10.1022</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">3/4"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/jetclean.jpg" alt="Mangueira Balflex JETCLEAN" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">JETCLEAN – Limpeza de Galeria – 10.1039</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">5/8"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/concrete-beton-light.jpg" alt="Mangueira Balflex CONCRETE BETON LIGHT" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">CONCRETE BETON LIGHT – Bombeamento de Concreto – 10.1246</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/concrete-beton-extraflex.jpg" alt="Mangueira Balflex CONCRETE BETON EXTRAFLEX" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">CONCRETE BETON EXTRAFLEX – Bombeamento de Concreto – 10.1248</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+              <span class="size-tag">5"</span>
+              <span class="size-tag">6"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/supersteam-preta.jpg" alt="Mangueira Balflex SUPERSTEAM Preta" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">SUPERSTEAM<sup class="reg">®</sup> – Vapor Saturado 208°C – 10.1260</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/supersteam-vermelha.jpg" alt="Mangueira Balflex SUPERSTEAM Vermelha" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">SUPERSTEAM<sup class="reg">®</sup> – Vapor Saturado 210°C – 10.1260.--R</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/paintspray-aco.jpg" alt="Mangueira Balflex PAINTSPRAY Aço" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">PAINTSPRAY – Pintura Industrial 2 Tramas Aço – 10.1041</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">5/16"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">3/4"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/paintspray-aramida.jpg" alt="Mangueira Balflex PAINTSPRAY Aramida" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">PAINTSPRAY – Pintura Industrial Aramida – 10.1042</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">3/16"</span>
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+      <article class="item-card">
+        <div class="item-img-wrap">
+          <span class="item-brand brand-balflex">Balflex</span>
+          <img src="imgs/produtos/balinox.jpg" alt="Mangueira Balflex BALINOX AISI 321" loading="lazy" />
+        </div>
+        <div class="item-content">
+          <div class="item-norm">Mangueira Industrial</div>
+          <h3 class="item-name">BALINOX<sup class="reg">®</sup> AISI 321 – Aço Inox Ondulado – 10.5211</h3>
+          <div class="item-sizes">
+            <div class="item-sizes-label">Bitolas disponíveis</div>
+            <div class="item-sizes-list">
+              <span class="size-tag">1/4"</span>
+              <span class="size-tag">3/8"</span>
+              <span class="size-tag">1/2"</span>
+              <span class="size-tag">3/4"</span>
+              <span class="size-tag">1"</span>
+              <span class="size-tag">1.1/4"</span>
+              <span class="size-tag">1.1/2"</span>
+              <span class="size-tag">2"</span>
+              <span class="size-tag">2.1/2"</span>
+              <span class="size-tag">3"</span>
+              <span class="size-tag">4"</span>
+              <span class="size-tag">5"</span>
+              <span class="size-tag">6"</span>
+              <span class="size-tag">8"</span>
+            </div>
+          </div>
+          <a href="index.html#contact" class="item-cta">Solicitar item
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </article>
+
+      </div>
+    </section>
+
+  </div>
+</main>
+
+<!-- ============= BOTTOM CTA ============= -->
+<section class="cat-cta">
+  <div class="container cat-cta-inner">
+    <div>
+      <h2>Não encontrou o<br><span class="accent">item específico?</span></h2>
+      <p>
+        Trabalhamos com uma linha estendida de produtos sob consulta — séries
+        especiais, certificações navais, capas de prensagem em medidas
+        intermediárias e dimensões customizadas para cada projeto.
+      </p>
+    </div>
+    <div class="cat-cta-actions">
+      <a href="index.html#contact" class="btn btn-primary">
+        Solicitar Orçamento
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 5l7 7-7 7"/></svg>
+      </a>
+      <a href="https://wa.me/5521998408687" class="btn btn-outline" target="_blank" rel="noopener">
+        Falar no WhatsApp
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============= FOOTER ============= -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <div class="logo-mark"><img src="assets/logo_icon.png" alt="Aerosteel"></div>
+          <div class="logo-text">
+            <div class="brand">AERO<span>STEEL</span></div>
+            <div class="tag">Mangueiras e Conexões</div>
+          </div>
+        </a>
+        <p>
+          Referência em mangueiras, conexões e soluções hidráulicas para os
+          ambientes mais exigentes — industrial, naval e domiciliar.
+        </p>
+        <div class="socials">
+          <a href="#" class="social" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          </a>
+          <a href="https://wa.me/5521998408687" class="social" aria-label="WhatsApp" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h5>Navegação</h5>
+        <ul>
+          <li><a href="index.html#home">Início</a></li>
+          <li><a href="index.html#about">Sobre</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="index.html#contact">Contato</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h5>Contato</h5>
+        <p>Rua Visconde de Itaboraí, 96<br>Niterói — RJ · 24030-091</p>
+        <p>Tel: <a href="tel:+552126208687">(21) 2620-8687</a></p>
+        <p><a href="mailto:adm.aerosteel@gmail.com">adm.aerosteel@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <p>© 2026 Aerosteel — Todos os direitos reservados.</p>
+      <p class="cnpj">CNPJ: 00.000.000/0001-00</p>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/5521998408687" class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<script>
+// Scrolled header
+const header = document.getElementById('header');
+window.addEventListener('scroll', () => {
+  header.classList.toggle('scrolled', window.scrollY > 60);
+});
+
+// Mobile menu
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => mobileMenu.classList.remove('open')));
+
+// Filter chips: smooth scroll + active state
+const chips = document.querySelectorAll('.cat-chip');
+chips.forEach(chip => {
+  chip.addEventListener('click', () => {
+    chips.forEach(c => c.classList.remove('active'));
+    chip.classList.add('active');
+  });
+});
+
+// Auto-update active chip on scroll
+const sections = document.querySelectorAll('.cat-section');
+window.addEventListener('scroll', () => {
+  const pos = window.scrollY + 240;
+  sections.forEach(s => {
+    if (pos >= s.offsetTop && pos < s.offsetTop + s.offsetHeight) {
+      const id = s.id;
+      chips.forEach(c => {
+        c.classList.toggle('active', c.getAttribute('href') === '#' + id);
+      });
+    }
+  });
+});
+
+// ====== SIZE SELECTOR — DYNAMIC SPECS UPDATE ======
+// Each .size-select has data-pressures or data-codes JSON. When the user
+// changes the selection, the [data-spec="pressure"] or [data-spec="code"]
+// element inside the same card updates with a brief pulse animation.
+document.querySelectorAll('.size-select').forEach(select => {
+  select.addEventListener('change', (e) => {
+    const sel = e.target;
+    const card = sel.closest('.item-card');
+    const value = sel.value;
+
+    // Pressure update (mangueiras)
+    const pressures = sel.dataset.pressures;
+    if (pressures) {
+      const map = JSON.parse(pressures);
+      const target = card.querySelector('[data-spec="pressure"]');
+      if (target && map[value]) {
+        target.textContent = map[value];
+        target.classList.remove('updated');
+        void target.offsetWidth; // restart animation
+        target.classList.add('updated');
+      }
+    }
+
+    // Code update (terminals/adaptadores/flanges/engates)
+    const codes = sel.dataset.codes;
+    if (codes) {
+      const map = JSON.parse(codes);
+      const target = card.querySelector('[data-spec="code"]');
+      if (target && map[value]) {
+        // Preserve any "CÓD." prefix
+        const prefix = target.textContent.startsWith('CÓD.') ? 'CÓD. ' : '';
+        target.textContent = prefix + map[value];
+        target.classList.remove('updated');
+        void target.offsetWidth;
+        target.classList.add('updated');
+      }
+    }
+  });
+});
+
+// Reveal on scroll
+const reveals = document.querySelectorAll('.reveal');
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      e.target.classList.add('visible');
+      obs.unobserve(e.target);
+    }
+  });
+}, { threshold: .08 });
+reveals.forEach(r => obs.observe(r));
+</script>
+</body>
+</html>
